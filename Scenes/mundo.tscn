@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://b3l120pwrhb7m"]
+[gd_scene load_steps=7 format=4 uid="uid://b3l120pwrhb7m"]
 
-[ext_resource type="Texture2D" uid="uid://vek15uljfroh" path="res://Assets/Images/Background.jpg" id="1_gqidu"]
 [ext_resource type="PackedScene" uid="uid://dtse1o8wnri4f" path="res://Scenes/jugador.tscn" id="1_uqtxj"]
 [ext_resource type="Texture2D" uid="uid://bmhjj0jmak0fr" path="res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/Texture/TX Tileset Ground.png" id="2_uqtxj"]
+[ext_resource type="Texture2D" uid="uid://ciyhcnd31stqc" path="res://Assets/Glacial-mountains-parallax-background_vnitti/background_glacial_mountains.png" id="3_gqidu"]
+[ext_resource type="Texture2D" uid="uid://tdhv1qot6vfy" path="res://Assets/Glacial-mountains-parallax-background_vnitti/Layers/clouds_mg_2.png" id="4_glouy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_gqidu"]
 texture = ExtResource("2_uqtxj")
@@ -679,19 +680,8 @@ sources/0 = SubResource("TileSetAtlasSource_gqidu")
 [node name="Mundo" type="Node2D"]
 position = Vector2(3, -7)
 
-[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
-
-[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground"]
-motion_mirroring = Vector2(432, 0)
-
-[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer"]
-position = Vector2(-19620, -18062)
-scale = Vector2(54.2541, 71.8647)
-texture = ExtResource("1_gqidu")
-centered = false
-
 [node name="jugador" parent="." instance=ExtResource("1_uqtxj")]
-position = Vector2(-1, 6)
+position = Vector2(70, 326)
 
 [node name="Camera2D" type="Camera2D" parent="jugador"]
 position = Vector2(38, 31)
@@ -699,5 +689,28 @@ offset = Vector2(0, -50)
 zoom = Vector2(3, 3)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
-tile_map_data = PackedByteArray("AAD+/wAAAAAAAAAAAAD//wAAAAABAAAAAAAAAAAAAAACAAAAAAABAAAAAAADAAAAAAACAAAAAAAEAAAAAAADAAAAAAAFAAAAAAAGAAAAAAAAAAAAAAAHAAAAAAABAAAAAAAIAAAAAAACAAAAAAAJAAAAAAADAAAAAAAKAAAAAAAEAAAAAAALAAAAAAAFAAAAAAD2/wAAAAAAAAAAAAD3/wAAAAABAAAAAAD4/wAAAAACAAAAAAD5/wAAAAADAAAAAAD6/wAAAAAEAAAAAAD7/wAAAAAFAAAAAAAOAAAAAAAAAAAAAAAPAAAAAAABAAAAAAAQAAAAAAACAAAAAAARAAAAAAADAAAAAAASAAAAAAAEAAAAAAATAAAAAAAFAAAAAAAWAAAAAAAAAAAAAAAXAAAAAAABAAAAAAAYAAAAAAACAAAAAAAZAAAAAAADAAAAAAAaAAAAAAAEAAAAAAAbAAAAAAAFAAAAAAAfAAAAAAAAAAAAAAAgAAAAAAABAAAAAAAhAAAAAAACAAAAAAAlAAAAAAAAAAAAAAAmAAAAAAABAAAAAAAnAAAAAAACAAAAAAA=")
+tile_map_data = PackedByteArray("AAAhABQAAAAAAAAAAAAiABQAAAABAAAAAAAjABQAAAACAAAAAAAkABQAAAADAAAAAAAlABQAAAAEAAAAAAAmABQAAAAFAAAAAAAqABQAAAAAAAAAAAArABQAAAABAAAAAAAsABQAAAACAAAAAAAtABQAAAADAAAAAAAuABQAAAAEAAAAAAAvABQAAAAFAAAAAAAXABQAAAAAAAAAAAAYABQAAAABAAAAAAAZABQAAAACAAAAAAAaABQAAAADAAAAAAAbABQAAAAEAAAAAAAcABQAAAAFAAAAAAANABQAAAAAAAAAAAAOABQAAAABAAAAAAAPABQAAAACAAAAAAAQABQAAAADAAAAAAARABQAAAAEAAAAAAASABQAAAAFAAAAAAA0ABQAAAAAAAAAAAA1ABQAAAABAAAAAAA2ABQAAAACAAAAAAA3ABQAAAADAAAAAAA4ABQAAAAEAAAAAAA5ABQAAAAFAAAAAAA/ABQAAAAAAAAAAABAABQAAAABAAAAAABBABQAAAACAAAAAABCABQAAAADAAAAAABDABQAAAAEAAAAAABEABQAAAAFAAAAAAADABQAAAAAAAAAAAAEABQAAAABAAAAAAAFABQAAAACAAAAAAAGABQAAAADAAAAAAAHABQAAAAEAAAAAAAIABQAAAAFAAAAAABJABQAAAAAAAAAAABKABQAAAABAAAAAABLABQAAAACAAAAAABMABQAAAADAAAAAABNABQAAAAEAAAAAABOABQAAAAFAAAAAABTABQAAAAAAAAAAABUABQAAAABAAAAAABVABQAAAACAAAAAABWABQAAAADAAAAAABXABQAAAAEAAAAAABYABQAAAAFAAAAAABcABQAAAAAAAAAAABdABQAAAABAAAAAABeABQAAAACAAAAAABfABQAAAADAAAAAABgABQAAAAEAAAAAABhABQAAAAFAAAAAABlABQAAAAAAAAAAABmABQAAAABAAAAAABnABQAAAACAAAAAABoABQAAAADAAAAAABpABQAAAAEAAAAAABqABQAAAAFAAAAAAA=")
 tile_set = SubResource("TileSet_glouy")
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="montaña" type="ParallaxLayer" parent="ParallaxBackground"]
+texture_filter = 1
+position = Vector2(-298, -53)
+motion_scale = Vector2(0, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/montaña"]
+position = Vector2(7, -5)
+scale = Vector2(3.00781, 3.00463)
+texture = ExtResource("3_gqidu")
+centered = false
+
+[node name="nuves" type="ParallaxLayer" parent="ParallaxBackground"]
+motion_mirroring = Vector2(320, 0)
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/nuves"]
+texture_filter = 1
+position = Vector2(9, -11)
+scale = Vector2(2.97135, 1)
+texture = ExtResource("4_glouy")
+centered = false
