@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1763046229
+::res://::1763057681
 icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763037075::1763037424::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile/TextFile::-1::1763037075::0::1::::<><><>0<>0<><>::
 ::res://Assets/::1763037424
@@ -26,8 +26,8 @@ TX FX Flame.png::CompressedTexture2D/CompressedTexture2D::9004216610754717601::1
 TX FX Torch Flame.png::CompressedTexture2D/CompressedTexture2D::7255068825836972247::1763037075::1763037424::1::::<><><>0<>0<>949e816ccff99bb0585a96a429c861bc<>res://.godot/imported/TX FX Torch Flame.png-091d499e9beff9a5bb7215ef0d4bdeb8.ctex::
 TX Tileset Ground.png::CompressedTexture2D/CompressedTexture2D::3243701304240590895::1763037075::1763037424::1::::<><><>0<>0<>8d67202c524de4bc6a8fc8d1110af9d1<>res://.godot/imported/TX Tileset Ground.png-aff81feabf3197864569fad2c27f894c.ctex::
 TX Village Props.png::CompressedTexture2D/CompressedTexture2D::5801628898064302654::1763037075::1763037424::1::::<><><>0<>0<>9b9f766d640fa52ba452e6a9ee696276<>res://.godot/imported/TX Village Props.png-1c90210f493307f22cb490d0f87c8c71.ctex::
-::res://Scenes/::1763044134
-jugador.tscn::PackedScene::8530298965710665431::1763044134::0::1::::<><><>0<>0<><>::uid://st8i6fkks4mm::::res://Assets/Martial Hero/Sprites/Idle.png<>uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://di0be77uls03v::::res://Assets/Martial Hero/Sprites/Fall.png<>uid://d30lttbifcdut::::res://Assets/Martial Hero/Sprites/Jump.png<>uid://170kqycccntx::::res://Assets/Martial Hero/Sprites/Run.png
-mundo.tscn::PackedScene::4376044656378419864::1763044134::0::1::::<><><>0<>0<><>::uid://vek15uljfroh::::res://Assets/Images/Background.jpg<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://bmhjj0jmak0fr::::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/Texture/TX Tileset Ground.png
-::res://Scripts/::1763037075
-jugador.gd::GDScript/GDScript::2341707827205433362::1763037075::0::1::::<>CharacterBody2D<><>0<>0<><>::
+::res://Scenes/::1763050163
+jugador.tscn::PackedScene::8530298965710665431::1763050163::0::1::::<><><>0<>0<><>::uid://st8i6fkks4mm::::res://Assets/Martial Hero/Sprites/Idle.png<>uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://di0be77uls03v::::res://Assets/Martial Hero/Sprites/Fall.png<>uid://d30lttbifcdut::::res://Assets/Martial Hero/Sprites/Jump.png<>uid://170kqycccntx::::res://Assets/Martial Hero/Sprites/Run.png
+mundo.tscn::PackedScene::4376044656378419864::1763050163::0::1::::<><><>0<>0<><>::uid://vek15uljfroh::::res://Assets/Images/Background.jpg<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://bmhjj0jmak0fr::::res://Assets/Tilesets/Pixel Art Platformer - Village Props v2.3.0/Texture/TX Tileset Ground.png
+::res://Scripts/::1763049574
+jugador.gd::GDScript::2341707827205433362::1763049574::0::1::::<>CharacterBody2D<><>0<>0<><>::
