@@ -681,15 +681,15 @@ size = Vector2(96, 47)
 [node name="Mundo" type="Node2D"]
 
 [node name="Background" type="Sprite2D" parent="."]
-position = Vector2(0, -48.437504)
-scale = Vector2(0.52785325, 0.53894925)
+position = Vector2(0, -48.4375)
+scale = Vector2(0.527853, 0.538949)
 texture = ExtResource("1_gqidu")
 
 [node name="jugador" parent="." instance=ExtResource("1_uqtxj")]
 position = Vector2(-40, -35)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-2, -4)
+[node name="Camera2D" type="Camera2D" parent="jugador"]
+position = Vector2(38, 31)
 offset = Vector2(0, -50)
 zoom = Vector2(3, 3)
 
