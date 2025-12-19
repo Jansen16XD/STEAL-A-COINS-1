@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 500
+@export var speed = 250
 @export var jump = -450
 
 var gravity = 980

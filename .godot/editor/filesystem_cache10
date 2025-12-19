@@ -1,11 +1,12 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1766141584
+::res://::1766179676
 demon.gd::GDScript::7860703800471600782::1764610247::0::1::::<>CharacterBody2D<><>0<>0<><>::
 demon.tscn::PackedScene::5750602723487063991::1765289787::0::1::::<><><>0<>0<><>::uid://dj81v4pusdbtm::::res://demon.gd
 GrapeSoda.ttf::FontFile::6399216149897468672::1766141584::1766141585::1::::<><><>0<>0<>ae5b7911608e922d4c3d8a48facf012f<>res://.godot/imported/GrapeSoda.ttf-a60e5536869277fe3c2b54b08673a197.fontdata::
 icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763565558::1763565681::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+main_menu.gd::GDScript::7725151506479149799::1766153094::0::1::::<>Control<><>0<>0<><>::
+main_menu.tscn::PackedScene::4447239445371012677::1766142669::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://diced736skmdb::::res://main_menu.gd<>uid://cxf3fjifcum4w::::res://GrapeSoda.ttf
 README.md::TextFile::-1::1763565558::0::1::::<><><>0<>0<><>::
-main_menu.tscn::PackedScene::4447239445371012677::1766141428::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png
 ::res://Assets/::1765627003
 Attack1.png::CompressedTexture2D/CompressedTexture2D::5313188049616506250::1763565558::1763565682::1::::<><><>0<>0<>5d6dc797be5878447433cf08fe9ad53e<>res://.godot/imported/Attack1.png-d625c10c73eaa163f817af6b1ed73cb1.ctex::
 ::res://Assets/Bringer-Of-Death/::1765289787
@@ -163,7 +164,7 @@ app_icon.ico::OtherFile::-1::1717359767::0::1::::<><><>0<>0<><>::
 ::res://Assets/Tileset Samurai/Input/::1764611099
 Sample 32x Tileset.png::CompressedTexture2D/CompressedTexture2D::5932857064130250001::1717362375::1764611099::1::::<><><>0<>0<>388d1bf09ce4ef7bbc3994624965181e<>res://.godot/imported/Sample 32x Tileset.png-cccc7f692accc0335f1c1c7ca3d53f8d.ctex::
 ::res://Assets/Tileset Samurai/Output/::1764611016
-::res://Final/::1763764383
+::res://Final/::1766153796
 Background_0.png::CompressedTexture2D/CompressedTexture2D::4179224474721383145::1763565558::1763764382::1::::<><><>0<>0<>39df67b20e4c07c066d0e5518437f952<>res://.godot/imported/Background_0.png-80440a2e5bdfae02751683b4b331332c.ctex::
 Background_1.png::CompressedTexture2D/CompressedTexture2D::5242882152849799625::1763565558::1763764382::1::::<><><>0<>0<>b45bb8123225b82ff938f70f19de91c8<>res://.godot/imported/Background_1.png-91ed911927c7cba70a81338d249583a1.ctex::
 brush.png::CompressedTexture2D/CompressedTexture2D::3426178195735485023::1763565558::1763764383::1::::<><><>0<>0<>51803a0ccebdfc34bc7b8977ade05bf9<>res://.godot/imported/brush.png-48608c22c0167606d4581c191403da4c.ctex::
@@ -214,17 +215,19 @@ Jump.png::CompressedTexture2D::1103940416289837733::1765629419::1765629442::1:::
 Run+Attack.png::CompressedTexture2D::8503918057824261939::1765629419::1765629442::1::::<><><>0<>0<>79dd7a7e27c79f78958eb0815366342e<>res://.godot/imported/Run+Attack.png-796b3b1de9bf32e43c2708d41db6d6df.ctex::
 Run.png::CompressedTexture2D::39683078131714492::1765629419::1765629442::1::::<><><>0<>0<>c2da4bfdb777576efde3afed7b275212<>res://.godot/imported/Run.png-95c09b17727733d935cefd6f679d8e90.ctex::
 Walk.png::CompressedTexture2D::5779480689947804100::1765629419::1765629442::1::::<><><>0<>0<>06b42e506c031755f98fe95eee7677bb<>res://.godot/imported/Walk.png-745ae778ac51c2af7b491986f3eeed69.ctex::
-::res://Scenes/::1766140149
+::res://Scenes/::1766154467
 coins.tscn::PackedScene::8245928175683633229::1766137818::0::1::::<><><>0<>0<><>::uid://j00dtf6yovjl::::res://Scripts/coins.gd<>uid://dncuitfxjy7ng::::res://Assets/Coins_16x16/PNG/Coin_One.png
 jugador.tscn::PackedScene::8530298965710665431::1766140090::0::1::::<><><>0<>0<><>::uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://ch5yc8gptoiym::::res://template_free/individual_sheets/male_hero_template-idle.png<>uid://cdhoflubr8g2r::::res://template_free/individual_sheets/male_hero_template-fall.png<>uid://fl5ro2jj0461::::res://template_free/individual_sheets/male_hero_template-jump.png<>uid://c54g0kh4h1giw::::res://template_free/individual_sheets/male_hero_template-run.png
-mundo.tscn::PackedScene::4376044656378419864::1766140149::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cqr6j3evgk3cn::::res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png<>uid://dpqnh5sv8jh3b::::res://Scenes/coins.tscn
+main_menu.tscn::PackedScene::3959493751631606254::1766154467::0::1::::<><><>0<>0<><>::uid://diced736skmdb::::res://main_menu.gd<>uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://cxf3fjifcum4w::::res://GrapeSoda.ttf<>uid://vygde6p7l5q1::::res://Sounds/treachery.mp3
+mundo.tscn::PackedScene::4376044656378419864::1766153946::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cqr6j3evgk3cn::::res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png<>uid://c3t633oynjjsj::::res://Sounds/Loop It [DGW OST].mp3<>uid://dpqnh5sv8jh3b::::res://Scenes/coins.tscn
 ::res://Scripts/::1766140033
 coins.gd::GDScript::684833325903482017::1765628141::0::1::::<>Area2D<><>0<>0<><>::
 enemigo.gd::GDScript::684648248330525318::1765627003::0::1::::<>CharacterBody2D<><>0<>0<><>::
 jugador.gd::GDScript::2341707827205433362::1766140033::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://Sounds/::1764610338
+::res://Sounds/::1766153909
+Loop It [DGW OST].mp3::AudioStreamMP3::6779285888972595241::1766153890::1766153909::1::::<><><>0<>0<>eeca91a7f0f4b182615783fa0168847d<>res://.godot/imported/Loop It [DGW OST].mp3-6e2df880bd459eb9b755484930aa3a23.mp3str::
 treachery.mp3::AudioStreamMP3/AudioStreamMP3::1523880700541527338::1764610247::1764610338::1::::<><><>0<>0<>f0ea6d63948b9b52e8a2d4d0747d6efe<>res://.godot/imported/treachery.mp3-9bf7125075df57f26d7c73ef65ac566f.mp3str::
-::res://template_free/::1766139527
+::res://template_free/::1766153766
 LICENSE.txt::TextFile::-1::1766139508::0::1::::<><><>0<>0<><>::
 male_hero_template.png::CompressedTexture2D::3602442277828983350::1766139508::1766139527::1::::<><><>0<>0<>d5d978024c914142e76407772ef6d099<>res://.godot/imported/male_hero_template.png-f138e043d77771ff5be44a3804cce984.ctex::
 READ ME.txt::TextFile::-1::1766139508::0::1::::<><><>0<>0<><>::
