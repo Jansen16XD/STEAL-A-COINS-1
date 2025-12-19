@@ -1,9 +1,11 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1766138193
+::res://::1766141584
 demon.gd::GDScript::7860703800471600782::1764610247::0::1::::<>CharacterBody2D<><>0<>0<><>::
 demon.tscn::PackedScene::5750602723487063991::1765289787::0::1::::<><><>0<>0<><>::uid://dj81v4pusdbtm::::res://demon.gd
+GrapeSoda.ttf::FontFile::6399216149897468672::1766141584::1766141585::1::::<><><>0<>0<>ae5b7911608e922d4c3d8a48facf012f<>res://.godot/imported/GrapeSoda.ttf-a60e5536869277fe3c2b54b08673a197.fontdata::
 icon.svg::CompressedTexture2D/CompressedTexture2D::2219951999146419051::1763565558::1763565681::1::::<><><>0<>0<>f29d7dda42e7e7598ebfcf08a8bd1d47<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1763565558::0::1::::<><><>0<>0<><>::
+main_menu.tscn::PackedScene::4447239445371012677::1766141428::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png
 ::res://Assets/::1765627003
 Attack1.png::CompressedTexture2D/CompressedTexture2D::5313188049616506250::1763565558::1763565682::1::::<><><>0<>0<>5d6dc797be5878447433cf08fe9ad53e<>res://.godot/imported/Attack1.png-d625c10c73eaa163f817af6b1ed73cb1.ctex::
 ::res://Assets/Bringer-Of-Death/::1765289787
@@ -212,13 +214,27 @@ Jump.png::CompressedTexture2D::1103940416289837733::1765629419::1765629442::1:::
 Run+Attack.png::CompressedTexture2D::8503918057824261939::1765629419::1765629442::1::::<><><>0<>0<>79dd7a7e27c79f78958eb0815366342e<>res://.godot/imported/Run+Attack.png-796b3b1de9bf32e43c2708d41db6d6df.ctex::
 Run.png::CompressedTexture2D::39683078131714492::1765629419::1765629442::1::::<><><>0<>0<>c2da4bfdb777576efde3afed7b275212<>res://.godot/imported/Run.png-95c09b17727733d935cefd6f679d8e90.ctex::
 Walk.png::CompressedTexture2D::5779480689947804100::1765629419::1765629442::1::::<><><>0<>0<>06b42e506c031755f98fe95eee7677bb<>res://.godot/imported/Walk.png-745ae778ac51c2af7b491986f3eeed69.ctex::
-::res://Scenes/::1766138134
+::res://Scenes/::1766140149
 coins.tscn::PackedScene::8245928175683633229::1766137818::0::1::::<><><>0<>0<><>::uid://j00dtf6yovjl::::res://Scripts/coins.gd<>uid://dncuitfxjy7ng::::res://Assets/Coins_16x16/PNG/Coin_One.png
-jugador.tscn::PackedScene::8530298965710665431::1766137818::0::1::::<><><>0<>0<><>::uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://cya3ibtmv4wgd::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Attack_1.png<>uid://nbli1jls1y2y::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Attack_2.png<>uid://d1vrip20xorlr::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Idle.png<>uid://cmwfl4vwbqc7i::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Jump.png<>uid://cvk0q7c6jddgm::::res://free-werewolf-sprite-sheets-pixel-art/Red_Werewolf/Run.png
-mundo.tscn::PackedScene::4376044656378419864::1766138134::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cqr6j3evgk3cn::::res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png<>uid://dpqnh5sv8jh3b::::res://Scenes/coins.tscn
-::res://Scripts/::1765922877
+jugador.tscn::PackedScene::8530298965710665431::1766140090::0::1::::<><><>0<>0<><>::uid://8mlt6f0j6nss::::res://Scripts/jugador.gd<>uid://ch5yc8gptoiym::::res://template_free/individual_sheets/male_hero_template-idle.png<>uid://cdhoflubr8g2r::::res://template_free/individual_sheets/male_hero_template-fall.png<>uid://fl5ro2jj0461::::res://template_free/individual_sheets/male_hero_template-jump.png<>uid://c54g0kh4h1giw::::res://template_free/individual_sheets/male_hero_template-run.png
+mundo.tscn::PackedScene::4376044656378419864::1766140149::0::1::::<><><>0<>0<><>::uid://b0sphmjtgvgmr::::res://Final/Background_0.png<>uid://dtse1o8wnri4f::::res://Scenes/jugador.tscn<>uid://cqr6j3evgk3cn::::res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png<>uid://dpqnh5sv8jh3b::::res://Scenes/coins.tscn
+::res://Scripts/::1766140033
 coins.gd::GDScript::684833325903482017::1765628141::0::1::::<>Area2D<><>0<>0<><>::
 enemigo.gd::GDScript::684648248330525318::1765627003::0::1::::<>CharacterBody2D<><>0<>0<><>::
-jugador.gd::GDScript::2341707827205433362::1765922877::0::1::::<>CharacterBody2D<><>0<>0<><>::
+jugador.gd::GDScript::2341707827205433362::1766140033::0::1::::<>CharacterBody2D<><>0<>0<><>::
 ::res://Sounds/::1764610338
 treachery.mp3::AudioStreamMP3/AudioStreamMP3::1523880700541527338::1764610247::1764610338::1::::<><><>0<>0<>f0ea6d63948b9b52e8a2d4d0747d6efe<>res://.godot/imported/treachery.mp3-9bf7125075df57f26d7c73ef65ac566f.mp3str::
+::res://template_free/::1766139527
+LICENSE.txt::TextFile::-1::1766139508::0::1::::<><><>0<>0<><>::
+male_hero_template.png::CompressedTexture2D::3602442277828983350::1766139508::1766139527::1::::<><><>0<>0<>d5d978024c914142e76407772ef6d099<>res://.godot/imported/male_hero_template.png-f138e043d77771ff5be44a3804cce984.ctex::
+READ ME.txt::TextFile::-1::1766139508::0::1::::<><><>0<>0<><>::
+::res://template_free/individual_sheets/::1766139526
+male_hero_template-combo_1.png::CompressedTexture2D::290672194322820262::1766139507::1766139526::1::::<><><>0<>0<>366893c8b996945b8f9e24dac958818d<>res://.godot/imported/male_hero_template-combo_1.png-dc963a8a0b78447899ecdefddde5bf42.ctex::
+male_hero_template-combo_1_end.png::CompressedTexture2D::2163608735933493220::1766139508::1766139526::1::::<><><>0<>0<>28dccea986f2e677816da2fd724afaa2<>res://.godot/imported/male_hero_template-combo_1_end.png-fd4d1a7c278cfae208c1a71bd1af7d12.ctex::
+male_hero_template-design.png::CompressedTexture2D::4132886722283243969::1766139508::1766139526::1::::<><><>0<>0<>c1b1371f3dca39f52721fe504fe610a5<>res://.godot/imported/male_hero_template-design.png-fbe04aa0c09872b99af3f652ae6252da.ctex::
+male_hero_template-fall.png::CompressedTexture2D::4998718118169370615::1766139508::1766139526::1::::<><><>0<>0<>cf790715d57487a665e8f9bd2648eb1e<>res://.godot/imported/male_hero_template-fall.png-62bd634efd3ae317acd189c4d37a7e50.ctex::
+male_hero_template-fall_loop.png::CompressedTexture2D::7979911207987636164::1766139508::1766139526::1::::<><><>0<>0<>9f385982bf41248a2270a0e91b142bcc<>res://.godot/imported/male_hero_template-fall_loop.png-ed40d584d39d06a6fe0a186436252af9.ctex::
+male_hero_template-idle.png::CompressedTexture2D::5327557128135290332::1766139508::1766139526::1::::<><><>0<>0<>8ef69f2ca1c739bf0022f5d1b061eae9<>res://.godot/imported/male_hero_template-idle.png-caec5e9a5280dbb30f52ccc6cfd93145.ctex::
+male_hero_template-jump.png::CompressedTexture2D::375505019222780900::1766139508::1766139526::1::::<><><>0<>0<>ee89a961c3602ac78a9102ff89608887<>res://.godot/imported/male_hero_template-jump.png-4da71fb1c3dc89f41c473c64c2eea5c5.ctex::
+male_hero_template-run.png::CompressedTexture2D::6938783115574271454::1766139508::1766139526::1::::<><><>0<>0<>134c55e35ffc841f5c13a47f835214be<>res://.godot/imported/male_hero_template-run.png-3019cbd6ab252b5c508ab4c6158e73ae.ctex::
+male_hero_template-walk.png::CompressedTexture2D::4792006248989087633::1766139508::1766139526::1::::<><><>0<>0<>716b55a942a7b64c13f25a55a2165e45<>res://.godot/imported/male_hero_template-walk.png-09b402091e26de7ae8b02af6e55b4991.ctex::
