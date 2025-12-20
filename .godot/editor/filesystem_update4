@@ -1,5 +1,2 @@
-res://Scenes/jugador.tscn
-res://Scenes/main_menu.tscn
-res://Scripts/jugador.gd
 res://Scenes/mundo.tscn
-res://Scenes/moving_plataform.tscn
+res://Scenes/main_menu.tscn
