@@ -1,7 +1,8 @@
-[gd_scene load_steps=14 format=3 uid="uid://cidit7t5rckk4"]
+[gd_scene load_steps=15 format=3 uid="uid://cidit7t5rckk4"]
 
 [ext_resource type="Texture2D" uid="uid://cuqwcit48xok6" path="res://Trap and Weapon/Trap and Weapon/Suriken.png" id="1_hitas"]
 [ext_resource type="Script" uid="uid://cqgq8djs2rsrj" path="res://Scripts/trampa.gd" id="1_st3ur"]
+[ext_resource type="AudioStream" uid="uid://druswm8b1d213" path="res://Assets/sonidos/sonidos/homemadeoof-47509.mp3" id="3_1ona6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_st3ur"]
 atlas = ExtResource("1_hitas")
@@ -71,7 +72,7 @@ animations = [{
 size = Vector2(25, 7)
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_st3ur"]
-radius = 26.0
+radius = 22.022715
 
 [node name="Trampa" type="CharacterBody2D"]
 collision_layer = 2
@@ -100,5 +101,11 @@ collision_layer = 2
 collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Damage"]
-position = Vector2(1, -10)
+position = Vector2(-1, -17)
 shape = SubResource("CircleShape2D_st3ur")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_1ona6")
+
+[connection signal="body_entered" from="Damage" to="." method="_on_damage_body_entered"]
+[connection signal="body_exited" from="Damage" to="." method="_on_damage_body_exited"]

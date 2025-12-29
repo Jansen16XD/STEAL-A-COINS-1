@@ -1,7 +1,14 @@
-extends Area2D
+extends Node2D
 
-
+var puede_sonar = true
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.get_name() == "jugador":
-		get_tree().reload_current_scene()
+	if body.name == "jugador" and puede_sonar:
+		$AudioStreamPlayer.play()
+		puede_sonar = false
+		if body.has_method("recibir_daño"):
+			body.recibir_daño(10)
+
+func _on_area_2d_body_exited(body: Node2D) -> void:
+	if body.name == "jugador":
+		puede_sonar = true

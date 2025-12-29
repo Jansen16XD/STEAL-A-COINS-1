@@ -1,9 +1,9 @@
 [gd_scene load_steps=10 format=3 uid="uid://bwoajv3vauep7"]
 
-[ext_resource type="Script" uid="uid://diced736skmdb" path="res://main_menu.gd" id="1_1ehe0"]
+[ext_resource type="Script" uid="uid://diced736skmdb" path="res://Scripts/main_menu.gd" id="1_1ehe0"]
 [ext_resource type="Texture2D" uid="uid://b0sphmjtgvgmr" path="res://Final/Background_0.png" id="2_ce3w2"]
 [ext_resource type="FontFile" uid="uid://cxf3fjifcum4w" path="res://Fuentes/GrapeSoda/GrapeSoda.ttf" id="3_n45e2"]
-[ext_resource type="AudioStream" uid="uid://vygde6p7l5q1" path="res://Sounds/treachery.mp3" id="4_ce3w2"]
+[ext_resource type="AudioStream" uid="uid://qs1e1botfnvq" path="res://Assets/sonidos/sonidos/pixel-song-19-31953_junta.mp3" id="4_ce3w2"]
 
 [sub_resource type="StyleBoxTexture" id="StyleBoxTexture_7vrkn"]
 texture = ExtResource("2_ce3w2")
@@ -130,7 +130,7 @@ text = "Steal a Coins"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="Audiomenu" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_ce3w2")
 volume_db = -10.0
 autoplay = true

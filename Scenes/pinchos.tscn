@@ -2,22 +2,17 @@
 
 [ext_resource type="Texture2D" uid="uid://c5brnqq2eh0o4" path="res://Assets/Animate Spikes/Animate Spikes/spikes.png" id="1_d15tb"]
 [ext_resource type="Script" uid="uid://dfnt8dohc5767" path="res://Scripts/pinchos.gd" id="1_o6r8l"]
-
-[sub_resource type="GDScript" id="GDScript_306q4"]
-script/source = "extends Node2D
-
-func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.get_name() == \"jugador\":
-		get_tree().reload_current_scene()
-"
+[ext_resource type="AudioStream" uid="uid://druswm8b1d213" path="res://Assets/sonidos/sonidos/homemadeoof-47509.mp3" id="3_306q4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_d15tb"]
 size = Vector2(41, 17)
 
 [node name="Pinchos" type="Node2D"]
-script = SubResource("GDScript_306q4")
+script = ExtResource("1_o6r8l")
 
 [node name="Area2D" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 16
 script = ExtResource("1_o6r8l")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
@@ -30,4 +25,9 @@ texture = ExtResource("1_d15tb")
 position = Vector2(-12.5, 2.5)
 shape = SubResource("RectangleShape2D_d15tb")
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_306q4")
+volume_db = -1.284
+
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
