@@ -1,18 +1,21 @@
-[gd_scene load_steps=2 format=3 uid="uid://b4khxde14clru"]
+[gd_scene load_steps=3 format=3 uid="uid://b4khxde14clru"]
 
 [ext_resource type="Script" uid="uid://dcs7o0rsa1s1n" path="res://Scripts/vida.gd" id="1_ayspy"]
+[ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="2_ayspy"]
 
 [node name="Vida" type="CanvasLayer"]
 script = ExtResource("1_ayspy")
 
 [node name="health_ProgressBar" type="ProgressBar" parent="."]
 modulate = Color(0.039215688, 1, 0.039215688, 1)
+show_behind_parent = true
 offset_left = 566.0
 offset_top = 11.0
 offset_right = 791.0
 offset_bottom = 59.0
 theme_override_colors/font_color = Color(0.563043, 0.013322748, 0.01557102, 1)
+theme_override_colors/font_outline_color = Color(0.95, 0.03800002, 0.098799974, 1)
+theme_override_fonts/font = ExtResource("2_ayspy")
 theme_override_font_sizes/font_size = 30
 step = 1.0
 value = 100.0
-show_percentage = false

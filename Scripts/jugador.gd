@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-@export var speed = 200
+@export var speed = 150
 @export var run_speed = 300
 @export var jump = -430
 @export var max_health = 100
@@ -13,7 +13,8 @@ var muerto = false
 
 func _ready():
 	health = GameData.health  
-	
+	add_to_group("jugador")
+
 
 func _physics_process(delta):
 	if muerto:
@@ -63,7 +64,7 @@ func _physics_process(delta):
 # DAÑO Y MUERTE
 # ===============================
 
-func recibir_daño(cantidad: int):
+func recibir_daño(cantidad):
 	if muerto:
 		return
 
@@ -81,5 +82,9 @@ func morir():
 	animated_sprite_2d.play("death")
 
 	await get_tree().create_timer(1.0).timeout
-	GameData.health = max_health
-	get_tree().reload_current_scene()
+
+	get_tree().change_scene_to_file("res://Scenes/misionfallida.tscn")
+
+
+
+	# Mostrar pantalla de Game Over (el nodo GameOver es Control con el script)

@@ -1,0 +1,144 @@
+[gd_scene load_steps=11 format=3 uid="uid://u2v0v5g5has6"]
+
+[ext_resource type="Script" uid="uid://bghux001bc6pn" path="res://Scripts/regla.gd" id="1_huoo6"]
+[ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_vy0c0"]
+[ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_huoo6"]
+[ext_resource type="Texture2D" uid="uid://ihloljqkc4jb" path="res://Assets/fondogris.png" id="4_vy0c0"]
+[ext_resource type="Script" uid="uid://ry1p5lo8806u" path="res://Scripts/label_2.gd" id="4_x5iqr"]
+[ext_resource type="Script" uid="uid://dawbck2r440q" path="res://Scripts/label_3.gd" id="6_rhsot"]
+[ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="6_yh6y6"]
+
+[sub_resource type="Animation" id="Animation_x5iqr"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_huoo6"]
+resource_name = "reglas"
+length = 1.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.4),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_yh6y6"]
+_data = {
+&"RESET": SubResource("Animation_x5iqr"),
+&"reglas": SubResource("Animation_huoo6")
+}
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_huoo6")
+
+[node name="portada" type="Sprite2D" parent="."]
+position = Vector2(675.5, 353.5)
+scale = Vector2(1.3271484, 0.6845703)
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 19.0
+offset_top = 28.0
+offset_right = 363.0
+offset_bottom = 77.0
+theme_override_fonts/font = ExtResource("2_vy0c0")
+theme_override_font_sizes/font_size = 48
+text = "Reglas:"
+
+[node name="Label2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 27.0
+offset_top = 125.0
+offset_right = 1319.0
+offset_bottom = 493.0
+theme_override_fonts/font = ExtResource("3_huoo6")
+theme_override_font_sizes/font_size = 43
+text = "1. Recoger todas las  (no importa 
+el orden)
+
+2. No morir ante las trampas o enemigos
+
+3. Llegar hasta la meta final
+
+"
+script = ExtResource("4_x5iqr")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Label2"]
+stream = ExtResource("6_yh6y6")
+volume_db = -20.0
+
+[node name="Label3" type="Label" parent="."]
+layout_mode = 0
+offset_left = 31.0
+offset_top = 409.0
+offset_right = 1506.0
+offset_bottom = 596.0
+theme_override_colors/font_color = Color(0.54408157, 0.066962525, 0.068398684, 1)
+theme_override_fonts/font = ExtResource("2_vy0c0")
+theme_override_font_sizes/font_size = 40
+text = "AVISO: tienes solo 100% de vida
+
+Tu vida no se reiniciará al siguiente 
+nivel. Cada trampa o enemigo tiene su
+propio daño
+
+Ten cuidado"
+script = ExtResource("6_rhsot")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Label3"]
+stream = ExtResource("6_yh6y6")
+volume_db = -20.0
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 588.0
+offset_right = 1272.0
+offset_bottom = 695.0
+theme_override_colors/font_color = Color(0.12941177, 0.6, 0.36078432, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_huoo6")
+theme_override_font_sizes/font_size = 50
+text = "Trampas o enemigos"
+
+[node name="Fondogris" type="Sprite2D" parent="."]
+position = Vector2(667, 359.5)
+scale = Vector2(1.3496094, 0.6962891)
+texture = ExtResource("4_vy0c0")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Fondogris"]
+libraries = {
+&"": SubResource("AnimationLibrary_yh6y6")
+}
+autoplay = "reglas"
+
+[node name="Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_yh6y6")
+volume_db = -5.474
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

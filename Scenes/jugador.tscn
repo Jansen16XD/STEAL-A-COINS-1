@@ -363,10 +363,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4xcq"]
-size = Vector2(28.524384, 45.2535)
+size = Vector2(34.783833, 47.30789)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iw3ti"]
-size = Vector2(28.11583, 45.253517)
+size = Vector2(44.43112, 47.23638)
 
 [node name="jugador" type="CharacterBody2D" groups=["jugador"]]
 position = Vector2(-61, 29)
@@ -379,13 +379,12 @@ script = ExtResource("1_n4xcq")
 position = Vector2(66, -32)
 scale = Vector2(1.9218756, 1.6610931)
 sprite_frames = SubResource("SpriteFrames_gxv3l")
-animation = &"ataque"
+animation = &"Idle"
 autoplay = "Idle"
-frame_progress = 0.15435414
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(65.381226, -31.097622)
-scale = Vector2(1.0000005, 1.0000002)
+position = Vector2(65.15603, -29.158169)
+scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_n4xcq")
 
 [node name="Damgedetection" type="Area2D" parent="."]
@@ -393,8 +392,8 @@ collision_layer = 16
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Damgedetection"]
-position = Vector2(65.5855, -31.097616)
-scale = Vector2(1.0000005, 1.0000002)
+position = Vector2(64.701225, -29.204145)
+scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_iw3ti")
 
 [connection signal="area_shape_entered" from="Damgedetection" to="." method="_on_damgedetection_area_shape_entered"]

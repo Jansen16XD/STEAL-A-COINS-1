@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://bmahyajw6if3i"]
+
+[ext_resource type="Script" uid="uid://4hsxgnqbysy4" path="res://Scripts/Coleccion.tres.gd" id="1_5dm08"]
+[ext_resource type="Script" uid="uid://dgq2biw1eshua" path="res://Scripts/nivel_3.gd" id="1_jxqql"]
+[ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="2_jxqql"]
+[ext_resource type="FontFile" uid="uid://boisxvh4qu2yb" path="res://Fuentes/dogica/OTF/dogicabold.otf" id="3_df6ib"]
+[ext_resource type="PackedScene" uid="uid://b4khxde14clru" path="res://Scenes/Vida.tscn" id="5_df6ib"]
+
+[node name="nivel_3" type="Node2D"]
+script = ExtResource("1_jxqql")
+
+[node name="Coleccion" type="CanvasLayer" parent="."]
+script = ExtResource("1_5dm08")
+
+[node name="Sprite2D" type="Sprite2D" parent="Coleccion"]
+position = Vector2(55.999996, 42)
+scale = Vector2(2.7096355, 2.203125)
+texture = ExtResource("2_jxqql")
+hframes = 12
+
+[node name="Label" type="Label" parent="Coleccion"]
+offset_left = 83.0
+offset_top = 26.0
+offset_right = 146.125
+offset_bottom = 113.0
+scale = Vector2(1.6, 1)
+theme_override_fonts/font = ExtResource("3_df6ib")
+theme_override_font_sizes/font_size = 30
+text = "1
+
+"
+
+[node name="Vida" parent="." instance=ExtResource("5_df6ib")]
+
+[node name="health_ProgressBar" parent="Vida" index="0"]
+offset_left = 1103.0
+offset_top = 24.0
+offset_right = 1328.0
+offset_bottom = 72.0
+
+[editable path="Vida"]

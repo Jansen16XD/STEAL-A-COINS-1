@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://cuqwcit48xok6" path="res://Trap and Weapon/Trap and Weapon/Suriken.png" id="1_hitas"]
 [ext_resource type="Script" uid="uid://cqgq8djs2rsrj" path="res://Scripts/trampa.gd" id="1_st3ur"]
-[ext_resource type="AudioStream" uid="uid://druswm8b1d213" path="res://Assets/sonidos/sonidos/homemadeoof-47509.mp3" id="3_1ona6"]
+[ext_resource type="AudioStream" uid="uid://druswm8b1d213" path="res://Sounds/homemadeoof-47509.mp3" id="3_1ona6"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_st3ur"]
 atlas = ExtResource("1_hitas")
@@ -75,7 +75,7 @@ size = Vector2(25, 7)
 radius = 22.022715
 
 [node name="Trampa" type="CharacterBody2D"]
-collision_layer = 2
+collision_layer = 16
 script = ExtResource("1_st3ur")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
