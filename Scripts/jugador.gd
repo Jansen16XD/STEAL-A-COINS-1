@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var jump = -430
 @export var max_health = 100
 
+
 var health
 var gravity = 980
 var muerto = false

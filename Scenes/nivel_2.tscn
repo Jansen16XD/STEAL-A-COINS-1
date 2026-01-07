@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://ljctl26p13ro"]
+[gd_scene load_steps=26 format=4 uid="uid://ljctl26p13ro"]
 
 [ext_resource type="Texture2D" uid="uid://sxqvqjamfmbl" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="1_3qbs7"]
 [ext_resource type="Script" uid="uid://d31tv3bwcppgt" path="res://Scripts/nivel_2.gd" id="1_f5q35"]
@@ -18,7 +18,6 @@
 [ext_resource type="PackedScene" uid="uid://dg6kn65l0f78g" path="res://Scenes/pinchos.tscn" id="15_sselb"]
 [ext_resource type="PackedScene" uid="uid://dqu4xi0mqcxrl" path="res://Scenes/portal.tscn" id="16_sselb"]
 [ext_resource type="Texture2D" uid="uid://dyo1wqno65i5p" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/1.png" id="17_f5q35"]
-[ext_resource type="PackedScene" uid="uid://c36ka6kmx2jog" path="res://Scenes/enemy2.tscn" id="19_4k5f8"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_804co"]
 texture = ExtResource("1_w5cds")
@@ -1137,6 +1136,7 @@ position = Vector2(-12.500002, -1.6666641)
 position = Vector2(-419.16666, 18.333338)
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(700.5, 501)
 scale = Vector2(3.4322917, 4.0925927)
 texture = ExtResource("17_f5q35")
@@ -1158,10 +1158,6 @@ position = Vector2(-18, 79)
 
 [node name="VBoxContainer" parent="Menupausa" index="1"]
 visible = false
-
-[node name="enemy11" parent="." instance=ExtResource("19_4k5f8")]
-position = Vector2(853, 606)
-collision_layer = 8
 
 [editable path="Vida"]
 [editable path="Portal"]
