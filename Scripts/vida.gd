@@ -3,5 +3,5 @@ extends CanvasLayer
 func _ready():
 	$health_ProgressBar.value = GameData.health
 
-func _process(delta):
+func _process(_delta):
 	$health_ProgressBar.value = GameData.health

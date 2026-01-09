@@ -335,7 +335,6 @@ position = Vector2(-18, 77)
 visible = false
 
 [node name="transicion" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(686, 354.5)
 scale = Vector2(1.3457031, 0.7548828)
 texture = ExtResource("17_hppdt")

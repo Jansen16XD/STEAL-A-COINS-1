@@ -16,9 +16,9 @@ func _ready():
 
 	area.body_entered.connect(_on_area_enter)
 	area.body_exited.connect(_on_area_exit)
-	timer.timeout.connect(_daño_constante)
 
-func _physics_process(delta):
+
+func _physics_process(_delta):
 	velocity.y += gravedad
 
 	# Gira al tocar pared, incluso si está atacando
@@ -41,7 +41,7 @@ func _physics_process(delta):
 func _on_area_enter(body: Node2D) -> void:
 	if body.is_in_group("jugador"):
 		jugador_en_area = body
-		jugador_en_area.recibir_daño(3) # 💥 DAÑO INMEDIATO
+		jugador_en_area.recibir_daño(20) # 💥 DAÑO INMEDIATO
 		audio_hit.play()
 		timer.start()
 		
@@ -49,8 +49,3 @@ func _on_area_exit(body: Node2D) -> void:
 	if body == jugador_en_area:
 		jugador_en_area = null
 		timer.stop()
-
-func _daño_constante() -> void:
-	if jugador_en_area and jugador_en_area.has_method("recibir_daño"):
-		jugador_en_area.recibir_daño(3)
-		audio_hit.play()   # ← AGREGADO

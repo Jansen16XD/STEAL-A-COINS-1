@@ -18,7 +18,7 @@ func _ready():
 	area.body_exited.connect(_on_area_exit)
 	timer.timeout.connect(_daño_constante)
 
-func _physics_process(delta):
+func _physics_process(_delta):
 	velocity.y += gravedad
 
 	# Gira al tocar pared, incluso si está atacando

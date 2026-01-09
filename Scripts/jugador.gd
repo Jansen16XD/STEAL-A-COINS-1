@@ -75,8 +75,9 @@ func recibir_daño(cantidad):
 	if health <= 0:
 		morir()
 
+
 # ===============================
-# CURACIÓN
+# CURACIÓN (CORREGIDO)
 # ===============================
 func curar(cantidad):
 	if muerto:
@@ -87,16 +88,15 @@ func curar(cantidad):
 	if health > max_health:
 		health = max_health
 
+	GameData.health = health  # ← AHORA SE ACTUALIZA AL MOMENTO
+	print("Curado. Vida actual:", health)
+
+
 func morir():
 	muerto = true
 	velocity = Vector2.ZERO
 	animated_sprite_2d.play("death")
 
-	await get_tree().create_timer(1.0).timeout
+	await get_tree().create_timer(0.5).timeout
 
 	get_tree().change_scene_to_file("res://Scenes/misionfallida.tscn")
-
-
-
-	GameData.health = health
-	print("Curado. Vida actual:", health)

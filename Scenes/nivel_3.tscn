@@ -683,12 +683,8 @@ id_moneda = "m29"
 position = Vector2(36, 477)
 
 [node name="Pocion" parent="." instance=ExtResource("17_bvitb")]
-position = Vector2(598, 437)
-collision_mask = 16
-
-[node name="Pocion2" parent="." instance=ExtResource("17_bvitb")]
-position = Vector2(597, 318)
-collision_mask = 16
+position = Vector2(612, 596)
+collision_layer = 1
 
 [editable path="Vida"]
 [editable path="Portal"]

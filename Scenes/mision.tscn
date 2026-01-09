@@ -131,7 +131,6 @@ metadata/_edit_use_anchors_ = true
 stream = ExtResource("2_4yo66")
 
 [node name="Sprite2D2" type="Sprite2D" parent="."]
-visible = false
 position = Vector2(708, 372)
 scale = Vector2(1.7304688, 1)
 texture = ExtResource("8_qrfpl")
