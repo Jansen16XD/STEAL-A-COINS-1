@@ -5,7 +5,9 @@ const RAY_FLOOR_POSITION_X = 30
 const RAY_WALL_TARGET_POSITION_X = 29
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
-var puede_sonar = true
+var jugador_en_contacto: Node2D = null
+var tiempo_entre_daño := 0.4
+var temporizador_daño := 0.0
 
 func _ready():
 	velocity.x = SPEED
@@ -21,18 +23,21 @@ func _physics_process(delta):
 		$detection_floor.position.x *= -1
 		$detection_wall.target_position.x *= -1
 
+	if jugador_en_contacto != null:
+		temporizador_daño -= delta
+		if temporizador_daño <= 0.0:
+			if jugador_en_contacto.has_method("recibir_daño"):
+				jugador_en_contacto.recibir_daño(10)
+				$AudioStreamPlayer.play()
+			temporizador_daño = tiempo_entre_daño
+
 	move_and_slide()
 
 func _on_damage_body_entered(body: Node2D) -> void:
-	if body.name == "jugador" and puede_sonar:
-		$AudioStreamPlayer.play()
-		puede_sonar = false
-
-		if body.has_method("recibir_daño"):
-			body.recibir_daño(10)
-
-
+	if body.name == "jugador":
+		jugador_en_contacto = body
+		temporizador_daño = 0.0  # daño inmediato al entrar
 
 func _on_damage_body_exited(body: Node2D) -> void:
-	if body.name == "jugador":
-		puede_sonar = true
+	if body == jugador_en_contacto:
+		jugador_en_contacto = null

@@ -30,21 +30,25 @@ grow_vertical = 2
 
 [node name="Label" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.67, 0.67, 0.67, 1)
+theme_override_colors/font_color = Color(0.0381391, 0.25872955, 0.14521992, 1)
 theme_override_fonts/font = ExtResource("2_xe2t2")
 theme_override_font_sizes/font_size = 50
 text = "     Pausa"
 
 [node name="Button" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_colors/font_color = Color(0.078582786, 0.40067717, 0.23542315, 1)
+theme_override_colors/font_pressed_color = Color(0.078431375, 0.4, 0.23529412, 1)
+theme_override_colors/font_hover_color = Color(0.078431375, 0.4, 0.23529412, 1)
 theme_override_fonts/font = ExtResource("3_yu0yr")
 theme_override_font_sizes/font_size = 40
 text = "Reiniciar"
 
 [node name="Button2" type="Button" parent="VBoxContainer"]
 layout_mode = 2
-theme_override_colors/font_color = Color(0.6, 0.6, 0.6, 1)
+theme_override_colors/font_color = Color(0.078582786, 0.40067717, 0.23542315, 1)
+theme_override_colors/font_pressed_color = Color(0.078431375, 0.4, 0.23529412, 1)
+theme_override_colors/font_hover_color = Color(0.078431375, 0.4, 0.23529412, 1)
 theme_override_fonts/font = ExtResource("3_yu0yr")
 theme_override_font_sizes/font_size = 40
 text = "Volver al menu

@@ -70,13 +70,13 @@ text = "Reglas:"
 
 [node name="Label2" type="Label" parent="."]
 layout_mode = 0
-offset_left = 27.0
-offset_top = 125.0
-offset_right = 1319.0
-offset_bottom = 493.0
+offset_left = 21.0
+offset_top = 119.0
+offset_right = 1313.0
+offset_bottom = 487.0
 theme_override_fonts/font = ExtResource("3_huoo6")
-theme_override_font_sizes/font_size = 43
-text = "1. Recoger todas las  (no importa 
+theme_override_font_sizes/font_size = 38
+text = "1. Recoger todas las monedas (no importa 
 el orden)
 
 2. No morir ante las trampas o enemigos
@@ -92,20 +92,21 @@ volume_db = -20.0
 
 [node name="Label3" type="Label" parent="."]
 layout_mode = 0
-offset_left = 31.0
-offset_top = 409.0
-offset_right = 1506.0
-offset_bottom = 596.0
+offset_left = 22.0
+offset_top = 378.0
+offset_right = 1497.0
+offset_bottom = 679.0
 theme_override_colors/font_color = Color(0.54408157, 0.066962525, 0.068398684, 1)
 theme_override_fonts/font = ExtResource("2_vy0c0")
 theme_override_font_sizes/font_size = 40
 text = "AVISO: tienes solo 100% de vida
 
 Tu vida no se reiniciará al siguiente 
-nivel. Cada trampa o enemigo tiene su
-propio daño
+nivel, el nivel no acab si no recoges
+todas las monedas. Cada trampa o 
+enemigo tiene su propio daño
 
-Ten cuidado"
+Suerteee"
 script = ExtResource("6_rhsot")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Label3"]
@@ -114,9 +115,9 @@ volume_db = -20.0
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
-offset_left = 507.0
-offset_top = 588.0
-offset_right = 1272.0
+offset_left = 429.0
+offset_top = 629.0
+offset_right = 1194.0
 offset_bottom = 695.0
 theme_override_colors/font_color = Color(0.12941177, 0.6, 0.36078432, 1)
 theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
@@ -127,6 +128,7 @@ theme_override_font_sizes/font_size = 50
 text = "Trampas o enemigos"
 
 [node name="Fondogris" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(667, 359.5)
 scale = Vector2(1.3496094, 0.6962891)
 texture = ExtResource("4_vy0c0")
