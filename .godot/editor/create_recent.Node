@@ -1,8 +1,9 @@
+Label
+CanvasLayer
 Timer
 CollisionShape2D
 Area2D
 AnimatedSprite2D
-CanvasLayer
 AudioStreamPlayer
 Camera2D
 TileMapLayer
@@ -11,5 +12,3 @@ ParallaxLayer
 ParallaxBackground
 AnimationPlayer
 Button
-Label
-CharacterBody2D

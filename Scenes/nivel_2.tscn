@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://ljctl26p13ro"]
+[gd_scene load_steps=28 format=4 uid="uid://ljctl26p13ro"]
 
 [ext_resource type="Texture2D" uid="uid://sxqvqjamfmbl" path="res://Assets/Legacy-Fantasy - High Forest 2.3/Background/Background.png" id="1_3qbs7"]
 [ext_resource type="Script" uid="uid://d31tv3bwcppgt" path="res://Scripts/nivel_2.gd" id="1_f5q35"]
@@ -19,6 +19,7 @@
 [ext_resource type="PackedScene" uid="uid://dqu4xi0mqcxrl" path="res://Scenes/portal.tscn" id="16_sselb"]
 [ext_resource type="Texture2D" uid="uid://dyo1wqno65i5p" path="res://Assets/free-sky-with-clouds-background-pixel-art-set/1.png" id="17_f5q35"]
 [ext_resource type="PackedScene" uid="uid://cndw8ox6w8duc" path="res://Scenes/pocion.tscn" id="18_4k5f8"]
+[ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="20_3p1n5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_804co"]
 texture = ExtResource("1_w5cds")
@@ -1148,6 +1149,7 @@ position = Vector2(758, 98)
 collision_layer = 1
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+visible = false
 position = Vector2(700.5, 501)
 scale = Vector2(3.4322917, 4.0925927)
 texture = ExtResource("17_f5q35")
@@ -1169,6 +1171,19 @@ position = Vector2(-18, 79)
 
 [node name="VBoxContainer" parent="Menupausa" index="1"]
 visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 599.0
+offset_top = 20.0
+offset_right = 802.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.019607844, 0.019607844, 0.019607844, 1)
+theme_override_fonts/font = ExtResource("20_3p1n5")
+theme_override_font_sizes/font_size = 20
+text = "fbcalfeb
+"
 
 [editable path="Pinchos"]
 [editable path="Vida"]

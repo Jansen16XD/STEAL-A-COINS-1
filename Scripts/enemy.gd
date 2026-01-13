@@ -41,7 +41,7 @@ func _physics_process(_delta):
 func _on_area_enter(body: Node2D) -> void:
 	if body.is_in_group("jugador"):
 		jugador_en_area = body
-		jugador_en_area.recibir_daño(5) # 💥 DAÑO INMEDIATO
+		jugador_en_area.recibir_daño(10) # 💥 DAÑO INMEDIATO
 		audio_hit.play()
 		timer.start()
 		
@@ -52,5 +52,5 @@ func _on_area_exit(body: Node2D) -> void:
 
 func _daño_constante() -> void:
 	if jugador_en_area and jugador_en_area.has_method("recibir_daño"):
-		jugador_en_area.recibir_daño(5)
+		jugador_en_area.recibir_daño(10)
 		audio_hit.play()   # ← AGREGADO
