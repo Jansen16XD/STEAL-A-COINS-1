@@ -3,9 +3,9 @@
 [ext_resource type="Script" uid="uid://dgspoh2hx068g" path="res://Scripts/detalles.gd" id="1_i0yh6"]
 [ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="1_iil4g"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_mqihf"]
-[ext_resource type="Texture2D" uid="uid://7y64soqhgsn6" path="res://Assets/sonidos/trampa1.png" id="3_mqihf"]
+[ext_resource type="Texture2D" uid="uid://7y64soqhgsn6" path="res://Assets/Background/trampa1.png" id="3_mqihf"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="4_d2vfm"]
-[ext_resource type="Texture2D" uid="uid://cjhfvcmnngt3e" path="res://Assets/sonidos/trampa2.png" id="6_wvp5v"]
+[ext_resource type="Texture2D" uid="uid://cjhfvcmnngt3e" path="res://Assets/Background/trampa2.png" id="6_wvp5v"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="7_d2vfm"]
 
 [sub_resource type="Animation" id="Animation_d2vfm"]

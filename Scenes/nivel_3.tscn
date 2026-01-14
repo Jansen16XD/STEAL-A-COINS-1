@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=4 uid="uid://bmahyajw6if3i"]
+[gd_scene load_steps=26 format=4 uid="uid://bmahyajw6if3i"]
 
 [ext_resource type="Script" uid="uid://4hsxgnqbysy4" path="res://Scripts/Coleccion.tres.gd" id="1_5dm08"]
 [ext_resource type="Script" uid="uid://dgq2biw1eshua" path="res://Scripts/nivel_3.gd" id="1_jxqql"]
@@ -20,6 +20,7 @@
 [ext_resource type="PackedScene" uid="uid://dg6kn65l0f78g" path="res://Scenes/pinchos.tscn" id="18_fpc32"]
 [ext_resource type="PackedScene" uid="uid://1qqmngll3bi6" path="res://Scenes/enemy.tscn" id="19_oh2mj"]
 [ext_resource type="PackedScene" uid="uid://dw68xlihcg8fd" path="res://Scenes/menupausa.tscn" id="20_1nruq"]
+[ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="21_duede"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_io8q0"]
 texture = ExtResource("7_cfnh5")
@@ -803,6 +804,19 @@ position = Vector2(-18, 79)
 
 [node name="VBoxContainer" parent="Menupausa" index="1"]
 visible = false
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Label" type="Label" parent="CanvasLayer"]
+offset_left = 599.0
+offset_top = 20.0
+offset_right = 802.0
+offset_bottom = 77.0
+theme_override_colors/font_color = Color(0.019607844, 0.019607844, 0.019607844, 1)
+theme_override_fonts/font = ExtResource("21_duede")
+theme_override_font_sizes/font_size = 20
+text = "fbcalfeb
+"
 
 [editable path="Vida"]
 [editable path="Portal"]

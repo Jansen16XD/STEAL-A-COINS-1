@@ -1,5 +1,5 @@
 extends Node2D
-@export var tiempo_inicial: int = 35
+@export var tiempo_inicial: int = 30
 @export var escena_final: String = "res://Scenes/misionfallida.tscn"
 
 var tiempo_restante: float
