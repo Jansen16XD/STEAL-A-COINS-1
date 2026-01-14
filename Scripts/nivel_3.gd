@@ -17,7 +17,6 @@ func _process(delta):
 
 
 func _actualizar_label():
-	@warning_ignore("integer_division")
 	var minutos = int(tiempo_restante) / 60
 	var segundos = int(tiempo_restante) % 60
 	$CanvasLayer/Label.text = "%02d:%02d" % [minutos, segundos]

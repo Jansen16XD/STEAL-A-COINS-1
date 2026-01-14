@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=4 uid="uid://3euum38ajap5"]
+[gd_scene load_steps=25 format=4 uid="uid://3euum38ajap5"]
 
 [ext_resource type="Script" uid="uid://bupei18p3obs2" path="res://Scripts/nivel_4.gd" id="1_mobm4"]
 [ext_resource type="Script" uid="uid://4hsxgnqbysy4" path="res://Scripts/Coleccion.tres.gd" id="1_uts83"]
@@ -18,6 +18,7 @@
 [ext_resource type="PackedScene" uid="uid://c36ka6kmx2jog" path="res://Scenes/enemy2.tscn" id="16_rlwe2"]
 [ext_resource type="PackedScene" uid="uid://1qqmngll3bi6" path="res://Scenes/enemy.tscn" id="17_5vihe"]
 [ext_resource type="PackedScene" uid="uid://cndw8ox6w8duc" path="res://Scenes/pocion.tscn" id="18_pdtf5"]
+[ext_resource type="PackedScene" uid="uid://cdu1t1lpecbyw" path="res://Scenes/moving_plataform_4.tscn" id="18_s4kv5"]
 
 [sub_resource type="Animation" id="Animation_f3x5k"]
 length = 0.001
@@ -231,6 +232,9 @@ scale = Vector2(1.7708334, 1.704327)
 texture = ExtResource("7_qahvg")
 centered = false
 
+[node name="enemy8" parent="." instance=ExtResource("17_5vihe")]
+position = Vector2(389, 662)
+
 [node name="CharacterBody2D" parent="." instance=ExtResource("13_ybmds")]
 position = Vector2(184, 676)
 
@@ -255,12 +259,15 @@ autoplay = true
 [node name="enemy2" parent="." instance=ExtResource("16_rlwe2")]
 position = Vector2(1168, 674)
 
-[node name="enemy8" parent="." instance=ExtResource("17_5vihe")]
-position = Vector2(885, 656)
-
 [node name="Pocion" parent="." instance=ExtResource("18_pdtf5")]
 position = Vector2(565, 516)
 collision_layer = 1
+
+[node name="moving_plataform4" parent="." instance=ExtResource("18_s4kv5")]
+position = Vector2(1258, 633)
+
+[node name="enemy9" parent="." instance=ExtResource("17_5vihe")]
+position = Vector2(598, 658)
 
 [editable path="Menupausa"]
 [editable path="Vida"]
