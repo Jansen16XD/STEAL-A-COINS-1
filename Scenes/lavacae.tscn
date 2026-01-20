@@ -1,0 +1,44 @@
+[gd_scene load_steps=5 format=3 uid="uid://bo7wjsuheks8f"]
+
+[ext_resource type="Texture2D" uid="uid://dffoply5eo3kf" path="res://Assets/Background/lavac.png" id="1_ghq8u"]
+
+[sub_resource type="GDScript" id="GDScript_ghq8u"]
+script/source = "extends RigidBody2D
+
+@export var daño := 20  # Puedes ajustar el daño desde el editor
+
+@onready var area = $Area2D
+
+func _ready():
+	area.connect(\"body_entered\", _on_body_entered)
+
+func _on_body_entered(body):
+	if body.is_in_group(\"jugador\"):
+		if body.has_method(\"recibir_daño\"):
+			body.recibir_daño(daño)
+		queue_free()
+"
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_c0b0u"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_u1kmy"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+script = SubResource("GDScript_ghq8u")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-1.5258789e-05, -8.000015)
+scale = Vector2(0.115999974, 0.12)
+texture = ExtResource("1_ghq8u")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(-1.5258789e-05, -8.000015)
+scale = Vector2(0.115999974, 0.12)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("CapsuleShape2D_c0b0u")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_u1kmy")
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]

@@ -2,7 +2,7 @@ extends CharacterBody2D
 
 @export var speed = 150
 @export var run_speed = 260
-@export var jump = -382
+@export var jump = -360
 @export var max_health = 100
 
 @export var start_facing_left := false   # ← NUEVO: elegir orientación en el inspector
