@@ -233,7 +233,7 @@ id_moneda = "m45"
 [node name="Coins31" parent="." instance=ExtResource("8_270ks")]
 position = Vector2(967, 175)
 collision_mask = 16
-id_moneda = "m47"
+id_moneda = "m48"
 
 [node name="Coins33" parent="." instance=ExtResource("8_270ks")]
 position = Vector2(442, 407)
@@ -243,12 +243,12 @@ id_moneda = "m44"
 [node name="Coins34" parent="." instance=ExtResource("8_270ks")]
 position = Vector2(383, 172)
 collision_mask = 16
-id_moneda = "m45"
+id_moneda = "m46"
 
 [node name="Coins35" parent="." instance=ExtResource("8_270ks")]
 position = Vector2(640, 176)
 collision_mask = 16
-id_moneda = "m46"
+id_moneda = "m47"
 
 [node name="Trampa" parent="." instance=ExtResource("9_6v4t3")]
 position = Vector2(732, 680)
