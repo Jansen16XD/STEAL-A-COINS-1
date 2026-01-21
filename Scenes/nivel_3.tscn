@@ -803,7 +803,7 @@ collision_mask = 16
 id_moneda = "m30"
 
 [node name="Coins19" parent="." instance=ExtResource("14_litv0")]
-position = Vector2(449, 61)
+position = Vector2(629, 70)
 collision_mask = 16
 id_moneda = "m31"
 
@@ -842,11 +842,31 @@ position = Vector2(160, 444)
 collision_layer = 1
 
 [node name="Pocion3" parent="." instance=ExtResource("17_bvitb")]
-position = Vector2(1202, 150)
+position = Vector2(1215, 166)
 collision_layer = 1
 
 [node name="Pocion4" parent="." instance=ExtResource("17_bvitb")]
 position = Vector2(726, 8)
+collision_layer = 1
+
+[node name="Pocion5" parent="." instance=ExtResource("17_bvitb")]
+position = Vector2(336, 4)
+collision_layer = 1
+
+[node name="Pocion6" parent="." instance=ExtResource("17_bvitb")]
+position = Vector2(442, 7)
+collision_layer = 1
+
+[node name="Pocion7" parent="." instance=ExtResource("17_bvitb")]
+position = Vector2(400, 5)
+collision_layer = 1
+
+[node name="Pocion8" parent="." instance=ExtResource("17_bvitb")]
+position = Vector2(355, 4)
+collision_layer = 1
+
+[node name="Pocion9" parent="." instance=ExtResource("17_bvitb")]
+position = Vector2(305, 4)
 collision_layer = 1
 
 [node name="Pinchos2" parent="." instance=ExtResource("18_fpc32")]
