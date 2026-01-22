@@ -333,7 +333,7 @@ position = Vector2(1002, 403.99997)
 rotation = 1.5934857
 
 [node name="Pinchos2" parent="." instance=ExtResource("12_dvqrj")]
-position = Vector2(1004.00006, 430)
+position = Vector2(1002, 430.00003)
 rotation = 1.5934857
 
 [node name="Pinchos3" parent="." instance=ExtResource("12_dvqrj")]
@@ -418,6 +418,10 @@ visible = false
 [node name="Pinchos7" parent="." instance=ExtResource("12_dvqrj")]
 position = Vector2(1215, 100)
 
+[node name="Pinchos8" parent="." instance=ExtResource("12_dvqrj")]
+position = Vector2(1121, 356)
+
 [editable path="Vida"]
 [editable path="Menupausa"]
 [editable path="Pinchos7"]
+[editable path="Pinchos8"]
