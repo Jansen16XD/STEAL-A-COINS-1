@@ -156,7 +156,7 @@ text = "1
 "
 
 [node name="jugador" parent="." instance=ExtResource("9_k7b3m")]
-position = Vector2(998.00006, 188)
+position = Vector2(-18.000061, 695)
 
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(682, 353)
