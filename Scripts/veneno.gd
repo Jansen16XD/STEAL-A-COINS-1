@@ -1,38 +1,52 @@
 extends Area2D
 
-@export var daño_por_tick: int = 2
-@export var daño_total: int = 10
-@onready var timer: Timer = Timer.new()
+@export var daño_por_tick := 2
+@export var daño_total := 10
+@export var tiempo_entre_ticks := 1.0
 
-var daño_acumulado: int = 0
-var objetivo: Node2D = null
+var daño_acumulado := 0
+var objetivo: Node = null
+var timer: Timer
+
 
 func _ready():
-	add_child(timer)
-	timer.wait_time = 1.0
+	timer = Timer.new()
+	timer.wait_time = tiempo_entre_ticks
 	timer.one_shot = false
-	timer.connect("timeout", Callable(self, "_on_timer_timeout"))
-	connect("body_entered", Callable(self, "_on_body_entered"))
-	connect("body_exited", Callable(self, "_on_body_exited"))
+	add_child(timer)
+	timer.timeout.connect(_on_timer_timeout)
 
-func _on_body_entered(body: Node2D) -> void:
+	body_entered.connect(_on_body_entered)
+
+
+func _on_body_entered(body):
+	if objetivo != null:
+		return
+
 	if body.is_in_group("jugador"):
 		objetivo = body
 		daño_acumulado = 0
+
+		# 👻 Desaparecer veneno del mapa
+		hide()
+
+		# Desactivar colisión para que no vuelva a activarse
+		if has_node("CollisionShape2D"):
+			$CollisionShape2D.disabled = true
+
 		timer.start()
 
-func _on_body_exited(body: Node2D) -> void:
-	if body == objetivo:
-		timer.stop()
-		objetivo = null
 
-func _on_timer_timeout() -> void:
-	if objetivo and daño_acumulado < daño_total:
+func _on_timer_timeout():
+	if objetivo == null:
+		timer.stop()
+		queue_free()
+		return
+
+	if daño_acumulado < daño_total:
 		if objetivo.has_method("recibir_daño"):
 			objetivo.recibir_daño(daño_por_tick)
 			daño_acumulado += daño_por_tick
-		else:
-			print("El nodo jugador no tiene el método 'recibir_daño'")
 	else:
 		timer.stop()
-		objetivo = null
+		queue_free()
