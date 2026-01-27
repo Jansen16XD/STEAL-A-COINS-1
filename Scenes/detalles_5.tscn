@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://bj0hwgxymth7r"]
+[gd_scene load_steps=11 format=3 uid="uid://bj0hwgxymth7r"]
 
 [ext_resource type="Texture2D" uid="uid://b2sswmbou53rj" path="res://Assets/fondoazul.png" id="1_07x4x"]
+[ext_resource type="Script" uid="uid://cn73umben57tm" path="res://Scripts/detalles_5.gd" id="1_hdicr"]
 [ext_resource type="FontFile" uid="uid://cgv6ivbx2usab" path="res://Fuentes/dogica/TTF/dogicapixelbold.ttf" id="2_hdicr"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_tsjc1"]
 [ext_resource type="Texture2D" uid="uid://cn31jt72m1v6d" path="res://Assets/Background/fuego-removebg-preview.png" id="4_5an60"]
+[ext_resource type="Texture2D" uid="uid://cmyxqqc85qfcc" path="res://Assets/Background/portalv.png" id="5_tsjc1"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="5_whcjo"]
 
 [sub_resource type="Animation" id="Animation_cfapw"]
@@ -43,6 +45,7 @@ _data = {
 }
 
 [node name="detalles_5" type="Node2D"]
+script = ExtResource("1_hdicr")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(675, 360.5)
@@ -57,29 +60,27 @@ offset_bottom = 81.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_hdicr")
 theme_override_font_sizes/font_size = 55
-text = "Nivel 5: tercera trampa"
+text = "Nivel 5: quarta trampa"
 
 [node name="Label2" type="Label" parent="."]
-offset_left = 309.0
-offset_top = 307.0
-offset_right = 1224.0
-offset_bottom = 390.0
+offset_left = 107.0
+offset_top = 163.0
+offset_right = 1022.0
+offset_bottom = 246.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_hdicr")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 38
 text = "15 de daño/0.4s"
 
 [node name="Label3" type="Label" parent="."]
-offset_left = 58.0
-offset_top = 168.0
-offset_right = 1333.0
-offset_bottom = 337.0
+offset_left = 947.0
+offset_top = 155.0
+offset_right = 1862.0
+offset_bottom = 238.0
 theme_override_colors/font_color = Color(0.20392157, 0.8156863, 0.2, 1)
 theme_override_fonts/font = ExtResource("2_hdicr")
-theme_override_font_sizes/font_size = 40
-text = "  Si cojes antes la ultima moneda 
-antes que las otras no podras volver
-												atras"
+theme_override_font_sizes/font_size = 38
+text = "???"
 
 [node name="Button" type="Button" parent="."]
 offset_left = 409.0
@@ -96,6 +97,12 @@ text = "Seguir
 "
 
 [node name="trampa1" type="Sprite2D" parent="."]
+position = Vector2(343.00003, 378.99997)
+rotation = 1.553343
+scale = Vector2(2.6836948, 2.0175133)
+texture = ExtResource("5_tsjc1")
+
+[node name="trampa2" type="Sprite2D" parent="."]
 position = Vector2(610.5, 483.51923)
 scale = Vector2(6.649999, 4.854074)
 texture = ExtResource("4_5an60")
@@ -115,3 +122,5 @@ autoplay = "trampas1"
 [node name="Audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("5_whcjo")
 volume_db = -5.474
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
