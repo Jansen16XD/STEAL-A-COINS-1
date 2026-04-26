@@ -316,10 +316,10 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4xcq"]
-size = Vector2(31.73101, 48.20998)
+size = Vector2(31.73101, 50.17244)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iw3ti"]
-size = Vector2(43.3733, 43.285995)
+size = Vector2(43.3733, 45.24333)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3cdix"]
 size = Vector2(69.8752, 24.599411)
@@ -338,7 +338,7 @@ animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1454459151]
-position = Vector2(64.70952, -32.64736)
+position = Vector2(64.70958, -31.66615)
 scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_n4xcq")
 
@@ -347,7 +347,7 @@ collision_layer = 16
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Damgedetection" unique_id=1839564687]
-position = Vector2(65.23022, -30.180258)
+position = Vector2(65.23023, -29.201593)
 scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_iw3ti")
 

@@ -1454,7 +1454,7 @@ volume_db = -10.629
 autoplay = true
 
 [node name="pocion2" parent="." unique_id=1598628101 instance=ExtResource("16_0s3hk")]
-position = Vector2(604, 435)
+position = Vector2(606, 407)
 scale = Vector2(0.8, 0.8)
 collision_mask = 16
 
@@ -1537,7 +1537,7 @@ position = Vector2(143, 671)
 [node name="moving_plataform_16" parent="." unique_id=964297313 instance=ExtResource("28_bmeo1")]
 modulate = Color(0.6364878, 0.99735516, 0.50459117, 1)
 self_modulate = Color(0.7080951, 0.8794631, 0, 1)
-position = Vector2(647, 508)
+position = Vector2(621, 493)
 
 [node name="Coleccion" type="CanvasLayer" parent="." unique_id=1164417853]
 script = ExtResource("29_q4lpe")
@@ -1560,23 +1560,32 @@ text = "1
 
 "
 
-[node name="transicion" type="Sprite2D" parent="Coleccion" unique_id=1697998975]
-visible = false
+[node name="transicion" type="Sprite2D" parent="." unique_id=1697998975]
 position = Vector2(727.99994, 373.50003)
 scale = Vector2(5.9346943, 4.6727276)
 texture = ExtResource("31_q4lpe")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Coleccion/transicion" unique_id=75116425]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=75116425]
 libraries/ = SubResource("AnimationLibrary_a3lru")
 autoplay = &"juego"
 
 [node name="Menupausa" parent="." unique_id=1821771297 instance=ExtResource("29_3tjam")]
 process_mode = 3
-position = Vector2(1012.00006, -51)
+position = Vector2(1022, -49)
 scale = Vector2(0.3, 0.3)
+
+[node name="ColorRect" parent="Menupausa" index="0" unique_id=2112459776]
+offset_left = 376.66684
+offset_top = 166.66666
+offset_right = 1130.6669
+offset_bottom = 399.66666
 
 [node name="VBoxContainer" parent="Menupausa" index="1" unique_id=320845081]
 visible = false
+offset_left = 378.66684
+offset_top = 184.66666
+offset_right = 1128.6669
+offset_bottom = 420.66666
 
 [editable path="jugador/Vida"]
 [editable path="Portal"]

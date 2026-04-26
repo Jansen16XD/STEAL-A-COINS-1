@@ -151,7 +151,6 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_yh6y6")
 text = "Siguiente"
 
 [node name="Fondogris" type="Sprite2D" parent="." unique_id=1763469617]
-visible = false
 position = Vector2(667, 359.5)
 scale = Vector2(1.3496094, 0.6962891)
 texture = ExtResource("7_yh6y6")

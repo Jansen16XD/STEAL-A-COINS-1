@@ -1389,9 +1389,11 @@ frame_progress = 0.29280102
 
 [node name="Trampa" parent="." unique_id=1731205895 instance=ExtResource("1_qeet1")]
 position = Vector2(292, 420)
+scale = Vector2(1.1, 1.1)
 
 [node name="Trampa2" parent="." unique_id=928650040 instance=ExtResource("1_qeet1")]
 position = Vector2(989, 181)
+scale = Vector2(1.1, 1.1)
 
 [node name="Pinchos" parent="." unique_id=170126903 instance=ExtResource("15_sselb")]
 position = Vector2(561, 342)
@@ -1401,6 +1403,76 @@ position = Vector2(995, 343)
 
 [node name="Pinchos3" parent="." unique_id=1583001365 instance=ExtResource("15_sselb")]
 position = Vector2(931, 179)
+
+[node name="Menupausa" parent="." unique_id=1821771297 instance=ExtResource("3_amwks")]
+process_mode = 3
+position = Vector2(924.00006, -37)
+scale = Vector2(0.3, 0.3)
+
+[node name="ColorRect" parent="Menupausa" index="0" unique_id=2112459776]
+offset_left = 376.66684
+offset_top = 166.66666
+offset_right = 1130.6669
+offset_bottom = 399.66666
+
+[node name="VBoxContainer" parent="Menupausa" index="1" unique_id=320845081]
+visible = false
+offset_left = 378.66684
+offset_top = 184.66666
+offset_right = 1128.6669
+offset_bottom = 420.66666
+
+[node name="Portal" parent="Menupausa" unique_id=817210813 instance=ExtResource("16_sselb")]
+modulate = Color(0.92698234, 0.51237005, 0.028364222, 1)
+position = Vector2(1039.9995, 1173.3334)
+scale = Vector2(4, 4)
+collision_layer = 2
+collision_mask = 16
+
+[node name="Destinacion" parent="Menupausa/Portal" index="2"]
+position = Vector2(-864.1666, -105)
+
+[node name="Portal2" parent="." unique_id=1497893036 instance=ExtResource("16_sselb")]
+modulate = Color(0.92698234, 0.51237005, 0.028364222, 1)
+position = Vector2(546, 153)
+scale = Vector2(1.2, 1.2)
+collision_layer = 2
+collision_mask = 16
+
+[node name="AnimatedSprite2D" parent="Portal2" index="0"]
+position = Vector2(0, 1.6666565)
+
+[node name="Destinacion" parent="Portal2" index="2"]
+position = Vector2(208, 23)
+
+[node name="Portal3" parent="." unique_id=1167502776 instance=ExtResource("16_sselb")]
+modulate = Color(0.92698234, 0.51237005, 0.028364222, 1)
+position = Vector2(187, 156)
+scale = Vector2(1.2, 1.2)
+collision_layer = 2
+collision_mask = 16
+
+[node name="CollisionShape2D" parent="Portal3" index="1"]
+position = Vector2(-12.500002, -1.6666641)
+
+[node name="Destinacion" parent="Portal3" index="2"]
+position = Vector2(798.3334, 153.33333)
+
+[node name="Portal4" parent="." unique_id=1789183119 instance=ExtResource("16_sselb")]
+modulate = Color(0.92698234, 0.51237005, 0.028364222, 1)
+position = Vector2(729, 158)
+scale = Vector2(1.2, 1.2)
+collision_layer = 2
+collision_mask = 16
+
+[node name="AnimatedSprite2D" parent="Portal4" index="0"]
+position = Vector2(0, -3.3333206)
+
+[node name="CollisionShape2D" parent="Portal4" index="1"]
+position = Vector2(-12.500002, -1.6666641)
+
+[node name="Destinacion" parent="Portal4" index="2"]
+position = Vector2(-260.8333, 15.833338)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1795869625]
 position = Vector2(-3, 0)
@@ -1478,52 +1550,6 @@ text = "1
 
 "
 metadata/_edit_use_anchors_ = true
-
-[node name="Portal" parent="." unique_id=817210813 instance=ExtResource("16_sselb")]
-modulate = Color(0.92698234, 0.51237005, 0.028364222, 1)
-position = Vector2(1237, 313)
-scale = Vector2(1.2, 1.2)
-collision_layer = 2
-collision_mask = 16
-
-[node name="Destinacion" parent="Portal" index="2"]
-position = Vector2(-864.1666, -105)
-
-[node name="Portal2" parent="." unique_id=1497893036 instance=ExtResource("16_sselb")]
-modulate = Color(0.92698234, 0.51237005, 0.028364222, 1)
-position = Vector2(546, 153)
-scale = Vector2(1.2, 1.2)
-collision_layer = 2
-collision_mask = 16
-
-[node name="Destinacion" parent="Portal2" index="2"]
-position = Vector2(208, 23)
-
-[node name="Portal3" parent="." unique_id=1167502776 instance=ExtResource("16_sselb")]
-modulate = Color(0.92698234, 0.51237005, 0.028364222, 1)
-position = Vector2(187, 156)
-scale = Vector2(1.2, 1.2)
-collision_layer = 2
-collision_mask = 16
-
-[node name="CollisionShape2D" parent="Portal3" index="1"]
-position = Vector2(-12.500002, -1.6666641)
-
-[node name="Destinacion" parent="Portal3" index="2"]
-position = Vector2(798.3334, 153.33333)
-
-[node name="Portal4" parent="." unique_id=1789183119 instance=ExtResource("16_sselb")]
-modulate = Color(0.92698234, 0.51237005, 0.028364222, 1)
-position = Vector2(729, 158)
-scale = Vector2(1.2, 1.2)
-collision_layer = 2
-collision_mask = 16
-
-[node name="CollisionShape2D" parent="Portal4" index="1"]
-position = Vector2(-12.500002, -1.6666641)
-
-[node name="Destinacion" parent="Portal4" index="2"]
-position = Vector2(-260.8333, 15.833338)
 
 [node name="enemy2" parent="." unique_id=279764957 instance=ExtResource("15_k6xhl")]
 position = Vector2(911, 589)
@@ -1610,18 +1636,10 @@ theme_override_colors/font_outline_color = Color(1, 1, 1, 1)
 theme_override_fonts/font = SubResource("FontFile_xiqut")
 theme_override_font_sizes/font_size = 10
 
-[node name="Menupausa" parent="." unique_id=1821771297 instance=ExtResource("3_amwks")]
-process_mode = 3
-position = Vector2(924.00006, -40)
-scale = Vector2(0.3, 0.3)
-
-[node name="VBoxContainer" parent="Menupausa" index="1" unique_id=320845081]
-visible = false
-
 [editable path="Pinchos"]
-[editable path="Portal"]
+[editable path="Menupausa"]
+[editable path="Menupausa/Portal"]
 [editable path="Portal2"]
 [editable path="Portal3"]
 [editable path="Portal4"]
 [editable path="jugador/Vida"]
-[editable path="Menupausa"]
