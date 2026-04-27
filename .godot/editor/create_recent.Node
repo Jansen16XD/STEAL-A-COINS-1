@@ -1,12 +1,13 @@
+Control
+Button
+Sprite2D
 Camera2D
 CharacterBody2D
-Sprite2D
 AnimatedSprite2D
 AudioStreamPlayer
 Panel
 ColorRect
 Label
-Button
 CanvasLayer
 TileMapLayer
 CollisionShape2D

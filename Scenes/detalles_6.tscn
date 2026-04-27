@@ -114,16 +114,22 @@ horizontal_alignment = 1
 
 [node name="Subtitulo2" type="Label" parent="." unique_id=628313008]
 offset_left = 25.0
-offset_top = 215.0
+offset_top = 256.0
 offset_right = 1331.0
-offset_bottom = 560.0
+offset_bottom = 488.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_s0c7q")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_5fmoo")
-text = "-1 de vida cada 0.2s"
+text = "-1 de vida cada 0.45s
+
+En el mapa solo habrá pinchos
+
+intenta  evitarlo y consigue la ultima 
+
+moneda que hay en el mapa"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="." unique_id=1010612238]
@@ -147,6 +153,7 @@ stream = ExtResource("4_g2ntk")
 volume_db = -5.474
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=1934651516]
+visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("5_uim55")
