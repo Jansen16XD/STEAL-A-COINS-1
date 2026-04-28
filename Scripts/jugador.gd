@@ -1,21 +1,20 @@
 extends CharacterBody2D
 
-# ===============================
-# EXPORTACIONES
-# ===============================
+# Movilidad
+
 @export var speed := 150
 @export var run_speed := 260
 @export var jump_force := -360
+var gravity := 940
 @export var max_health := 100
 @export var start_facing_left := false
 @export var tiempo_invulnerable := 0.5
 @export var tiempo_flash := 0.07
 
-# ===============================
+
 # VARIABLES
-# ===============================
+
 var health: int
-var gravity := 940
 var muerto := false
 var mirando_izquierda := false
 var invulnerable := false
