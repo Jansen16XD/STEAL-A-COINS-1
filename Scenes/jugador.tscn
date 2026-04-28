@@ -316,7 +316,7 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_n4xcq"]
-size = Vector2(31.73101, 50.17244)
+size = Vector2(37.009438, 50.17244)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_iw3ti"]
 size = Vector2(43.3733, 45.24333)
@@ -335,7 +335,7 @@ animation = &"Idle"
 autoplay = "Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1454459151]
-position = Vector2(64.70958, -31.66615)
+position = Vector2(65.22192, -31.666151)
 scale = Vector2(1.0000006, 1.0000002)
 shape = SubResource("RectangleShape2D_n4xcq")
 
