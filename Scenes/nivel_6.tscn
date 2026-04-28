@@ -575,7 +575,7 @@ position = Vector2(274, 130)
 scale = Vector2(1.5, 1.5)
 
 [node name="Pinchos7" parent="." unique_id=345030142 instance=ExtResource("3_wjf4k")]
-position = Vector2(32, 198)
+position = Vector2(30.000002, 198)
 rotation = 1.5707964
 scale = Vector2(1.5, 1.5)
 
@@ -646,6 +646,10 @@ scale = Vector2(1.5, 1.5)
 
 [node name="Pinchos10" parent="." unique_id=1653019270 instance=ExtResource("16_cu4cd")]
 position = Vector2(90, 358)
+scale = Vector2(1.4, 1.4)
+
+[node name="Pinchos52" parent="." unique_id=2523871 instance=ExtResource("16_cu4cd")]
+position = Vector2(90, 476.00003)
 scale = Vector2(1.4, 1.4)
 
 [node name="Pinchos11" parent="." unique_id=1068305727 instance=ExtResource("16_cu4cd")]

@@ -1,2 +1,5 @@
 res://Scripts/jugador.gd
 res://Scenes/nivel_6.tscn
+res://Scenes/jugador.tscn
+res://Scenes/nivel_4.tscn
+res://Scenes/main_menu.tscn
