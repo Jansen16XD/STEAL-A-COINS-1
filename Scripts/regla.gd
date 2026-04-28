@@ -17,7 +17,7 @@ func _ready() -> void:
 	aviso.visible = true
 	await aviso.type_text()
 
-	# 🟢 Mostrar botón al final
+	# sMostrar botón al final
 	boton.visible = true
 
 

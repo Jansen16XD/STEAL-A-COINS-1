@@ -1,5 +1,5 @@
+res://Scenes/regla.tscn
+res://Scenes/controles.tscn
+res://Scripts/regla.gd
+res://Scripts/controles.gd
 res://Scripts/jugador.gd
-res://Scenes/nivel_6.tscn
-res://Scenes/jugador.tscn
-res://Scenes/nivel_4.tscn
-res://Scenes/main_menu.tscn

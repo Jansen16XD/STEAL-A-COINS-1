@@ -161,6 +161,6 @@ autoplay = &"reglas"
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=704925059]
 stream = ExtResource("6_yh6y6")
-volume_db = -5.474
+volume_db = 2.354
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

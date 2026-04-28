@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://hldx44dcys04"]
 
-[ext_resource type="Script" uid="uid://c5xsp50gkry4u" path="res://scripts/controles.gd" id="1_0rrjf"]
+[ext_resource type="Script" uid="uid://c5xsp50gkry4u" path="res://Scripts/controles.gd" id="1_0rrjf"]
 [ext_resource type="Texture2D" uid="uid://dr61ri1ldwtu8" path="res://Icono/controles.png" id="1_ypdtb"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_p5714"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="4_p5714"]
@@ -71,10 +71,6 @@ theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_hc6mp")
 text = "Siguiente"
 
-[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=902093837]
-stream = ExtResource("4_p5714")
-volume_db = -5.474
-
 [node name="Fondogris" type="Sprite2D" parent="." unique_id=1403194594]
 position = Vector2(689.00006, 336.5)
 scale = Vector2(2.0991254, 1.9870466)
@@ -83,5 +79,9 @@ texture = ExtResource("5_hc6mp")
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Fondogris" unique_id=1462901502]
 libraries/ = SubResource("AnimationLibrary_qc8tm")
 autoplay = &"reglas"
+
+[node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1739595455]
+stream = ExtResource("4_p5714")
+volume_db = -10.0
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
