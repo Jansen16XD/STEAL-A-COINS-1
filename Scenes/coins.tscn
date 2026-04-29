@@ -97,7 +97,7 @@ animations = [{
 }]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_3vsty"]
-radius = 17.0
+radius = 12.369317
 
 [node name="Coins" type="Area2D" unique_id=426282340 groups=["moneda"]]
 script = ExtResource("1_ojwyu")
