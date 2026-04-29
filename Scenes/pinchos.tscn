@@ -8,10 +8,7 @@
 size = Vector2(34, 0)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_306q4"]
-size = Vector2(32, 20)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_naq8m"]
-size = Vector2(3.7344952, 18)
+size = Vector2(36, 20)
 
 [node name="Pinchos" type="CharacterBody2D" unique_id=1511124820]
 script = ExtResource("1_o6r8l")
@@ -41,16 +38,6 @@ wait_time = 0.2
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=214108600]
 position = Vector2(-13, 2)
 shape = SubResource("RectangleShape2D_306q4")
-
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1067685292]
-position = Vector2(-29.608845, 2.827714)
-rotation = 0.27576202
-shape = SubResource("RectangleShape2D_naq8m")
-
-[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1131281075]
-position = Vector2(3.9999995, 2.9999998)
-rotation = -0.2617994
-shape = SubResource("RectangleShape2D_naq8m")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
 [connection signal="body_exited" from="Area2D" to="." method="_on_area_2d_body_exited"]
