@@ -8,7 +8,7 @@
 size = Vector2(6, 3)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_k3w8g"]
-size = Vector2(10, 19)
+size = Vector2(2.51198, 19)
 
 [node name="Pinchos2" type="CharacterBody2D" unique_id=1653019270]
 script = ExtResource("1_gm5gc")
@@ -35,8 +35,14 @@ volume_db = -1.284
 [node name="Timer" type="Timer" parent="." unique_id=1818091126]
 wait_time = 0.2
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=655381518]
-position = Vector2(-13, -10.5)
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1243335263]
+position = Vector2(-11.000001, -10)
+rotation = -0.28797933
+shape = SubResource("RectangleShape2D_k3w8g")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D2" unique_id=655381518]
+position = Vector2(-3.8352792, -1.1360617)
+rotation = 0.57770395
 shape = SubResource("RectangleShape2D_k3w8g")
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
