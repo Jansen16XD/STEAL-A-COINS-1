@@ -29,13 +29,13 @@ res://Scenes/moving_plataform_5.tscn::cb4bd18cfb28e12a87a167628f18f02e::17761524
 res://Scenes/moving_plataform_6.tscn::df85bec1cd0d3906b74049f3ca0ef222::1771837672::res://.godot/exported/133200997/export-7425b8cbb85c68f3aec3be5bcbdb0207-moving_plataform_6.scn
 res://Scenes/moving_plataform_7.tscn::f16ad2e061e0412b5fc95ca5c7a61b62::1771837672::res://.godot/exported/133200997/export-0706ce38496b3b5cde841db312ccd1ec-moving_plataform_7.scn
 res://Scenes/moving_plataform_8.tscn::42fef7249a36e7220f41f9459528ec3d::1776152418::res://.godot/exported/133200997/export-c7a3c34ce122c407ee49d366ae029ff9-moving_plataform_8.scn
-res://Scenes/mundo.tscn::84b9821700e7ca6f24f1e14613efd847::1777457793::res://.godot/exported/133200997/export-f14e70ae03d0416524ca0096933a8077-mundo.scn
+res://Scenes/mundo.tscn::84b9821700e7ca6f24f1e14613efd847::1777458104::res://.godot/exported/133200997/export-f14e70ae03d0416524ca0096933a8077-mundo.scn
 res://Scenes/nivel_2.tscn::6b13c49124a90b123d2a2b0807a2fe80::1777457332::res://.godot/exported/133200997/export-856984b72a848ffae85895874b4de5ab-nivel_2.scn
 res://Scenes/nivel_3.tscn::d53ae3fbfbbeed4c0614becae33c7c0d::1777457329::res://.godot/exported/133200997/export-4f0ec90bfa23870ca809d846a9409044-nivel_3.scn
 res://Scenes/nivel_4.tscn::4b533f632efe001a28fa0d55add6c1a6::1777457533::res://.godot/exported/133200997/export-31309bfb843de19126adeb627fac02b5-nivel_4.scn
 res://Scenes/nivel_5.tscn::e8d8d5709b3e7683d8d78977b495a2e4::1777457078::res://.godot/exported/133200997/export-e4c866b472803ba67309cf1fe03213fc-nivel_5.scn
-res://Scenes/nivel_6.tscn::b0bc35d5caddfae15b553a04a675a2b3::1777457319::res://.godot/exported/133200997/export-31705c7b2624bd5bfcf5fcdb0387139e-nivel_6.scn
-res://Scenes/pinchos.tscn::88412b7ca41bbb6b06dc95cfe7ec5d1b::1776767872::res://.godot/exported/133200997/export-01a30e0cb05a0b169b15c503e0fb4b2f-pinchos.scn
+res://Scenes/nivel_6.tscn::b0bc35d5caddfae15b553a04a675a2b3::1777459141::res://.godot/exported/133200997/export-31705c7b2624bd5bfcf5fcdb0387139e-nivel_6.scn
+res://Scenes/pinchos.tscn::8e24760285f3a9125d211cdc7c2c09ea::1777459334::res://.godot/exported/133200997/export-01a30e0cb05a0b169b15c503e0fb4b2f-pinchos.scn
 res://Scenes/pocion.tscn::ece064c588db464d2f38b21dc8bd4aca::1771316599::res://.godot/exported/133200997/export-0d0106a3aab19213a57b284357f4e234-pocion.scn
 res://Scenes/pocion_2.tscn::4ba6b30a0560f97048c87de85977332d::1771316599::res://.godot/exported/133200997/export-24b4731b23bad964d8d01ebebf7da533-pocion_2.scn
 res://Scenes/portal.tscn::b53587095acfd0110c5e650d389a51bd::1769766591::res://.godot/exported/133200997/export-e6aa7fcb2e43d6395eac3a8bf41ce62d-portal.scn
@@ -45,5 +45,5 @@ res://Scenes/trampa.tscn::4ece4449fefdd2359a9476a4ffdd7dd7::1774258165::res://.g
 res://Scenes/veneno.tscn::196c3f7ae76e00bc7ccede890e78e7c2::1776933973::res://.godot/exported/133200997/export-8a284dc1e2c36139ebfb6e4820a44c9e-veneno.scn
 res://Scenes/Vida.tscn::5261b1f9cf91888229c3495dee008d51::1776164828::res://.godot/exported/133200997/export-06bb4599ea194cf28dccb64147209c22-Vida.scn
 res://barra_salud.tscn::8b7fe55a06369a6f292000030aad76a1::1769766592::res://.godot/exported/133200997/export-ecad3b309a9a190b7938fcb1185b0581-barra_salud.scn
-res://Scenes/pinchos_2.tscn::af70aec229282c385bad2af402ad8a8b::1776767858::res://.godot/exported/133200997/export-0b17fc00f8f4d230889ff03f5f9d6a58-pinchos_2.scn
+res://Scenes/pinchos_2.tscn::39930216c767a5dae69fe5e214c40da0::1777459179::res://.godot/exported/133200997/export-0b17fc00f8f4d230889ff03f5f9d6a58-pinchos_2.scn
 res://Scenes/controles.tscn::a51f12676a7e60965f5125b65469b2d3::1777456166::res://.godot/exported/133200997/export-a48dedcd9713a3680d5fbd8a6bb3533f-controles.scn
