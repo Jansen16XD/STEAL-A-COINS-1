@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://hldx44dcys04"]
 
 [ext_resource type="Script" uid="uid://c5xsp50gkry4u" path="res://Scripts/controles.gd" id="1_0rrjf"]
-[ext_resource type="Texture2D" uid="uid://dr61ri1ldwtu8" path="res://Icono/controles.png" id="1_ypdtb"]
+[ext_resource type="Texture2D" uid="uid://1awcjdrj6cae" path="res://CONTROLES2.png" id="2_hc6mp"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_p5714"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="4_p5714"]
 [ext_resource type="Texture2D" uid="uid://btgqfsqphvf25" path="res://Assets/Background/rojo.jpg" id="5_hc6mp"]
@@ -53,9 +53,9 @@ anchors_preset = 0
 script = ExtResource("1_0rrjf")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1890079694]
-position = Vector2(677.5, 356.5)
-scale = Vector2(0.8938802, 0.69628906)
-texture = ExtResource("1_ypdtb")
+position = Vector2(680.5, 355.5)
+scale = Vector2(0.7734775, 0.7899441)
+texture = ExtResource("2_hc6mp")
 
 [node name="Button" type="Button" parent="." unique_id=1335308841]
 layout_mode = 0

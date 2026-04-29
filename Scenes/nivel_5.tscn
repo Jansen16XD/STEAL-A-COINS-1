@@ -1086,7 +1086,7 @@ autoplay = "default"
 frame_progress = 0.83788246
 
 [node name="jugador" parent="." unique_id=710202896 instance=ExtResource("1_expbk")]
-position = Vector2(1253, 711)
+position = Vector2(1276.0001, 705.99994)
 start_facing_left = true
 
 [node name="Vida" parent="jugador" unique_id=320206472 instance=ExtResource("8_ngh0x")]
@@ -1460,6 +1460,16 @@ collision_mask = 16
 
 [node name="pocion3" parent="." unique_id=1950408568 instance=ExtResource("16_0s3hk")]
 position = Vector2(1164.0001, 285)
+scale = Vector2(0.8, 0.8)
+collision_mask = 16
+
+[node name="pocion5" parent="." unique_id=1584856953 instance=ExtResource("16_0s3hk")]
+position = Vector2(1140, 579)
+scale = Vector2(0.8, 0.8)
+collision_mask = 16
+
+[node name="pocion6" parent="." unique_id=1936849927 instance=ExtResource("16_0s3hk")]
+position = Vector2(106.00012, 582)
 scale = Vector2(0.8, 0.8)
 collision_mask = 16
 

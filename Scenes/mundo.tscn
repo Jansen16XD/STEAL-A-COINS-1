@@ -592,12 +592,12 @@ scale = Vector2(1.1, 1.1)
 empieza_a_la_derecha = false
 
 [node name="Trampa7" parent="." unique_id=997750259 instance=ExtResource("3_has1v")]
-position = Vector2(128, 115)
+position = Vector2(1100, 115)
 scale = Vector2(1.1, 1.1)
 empieza_a_la_derecha = false
 
 [node name="Trampa8" parent="." unique_id=37513340 instance=ExtResource("3_has1v")]
-position = Vector2(685, 115)
+position = Vector2(788, 117)
 scale = Vector2(1.1, 1.1)
 empieza_a_la_derecha = false
 
@@ -615,11 +615,11 @@ position = Vector2(1232, 395)
 scale = Vector2(1.1, 1.1)
 
 [node name="Trampa5" parent="." unique_id=1475217643 instance=ExtResource("3_has1v")]
-position = Vector2(1055, 116)
+position = Vector2(109, 112)
 scale = Vector2(1.1, 1.1)
 
 [node name="Trampa6" parent="." unique_id=1210665055 instance=ExtResource("3_has1v")]
-position = Vector2(467, 118)
+position = Vector2(463, 101.99999)
 scale = Vector2(1.1, 1.1)
 
 [node name="Pinchos2" parent="." unique_id=236620244 instance=ExtResource("13_6bs12")]

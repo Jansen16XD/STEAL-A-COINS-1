@@ -1586,7 +1586,6 @@ position = Vector2(758, 98)
 collision_layer = 1
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=1585628109]
-visible = false
 position = Vector2(700.5, 501)
 scale = Vector2(3.4322917, 4.0925927)
 texture = ExtResource("17_f5q35")

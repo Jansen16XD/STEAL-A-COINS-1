@@ -1,10 +1,11 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1777373081
+::res://::1777456099
 azulito.png::CompressedTexture2D::4907454429975287997::1776152418::1776152418::1::::<><><>0<>0<>88c9aa6dd22ee801ea3a551b7b9275e8<>res://.godot/imported/azulito.png-3041240af8200cdc461669f54f7bfe29.ctex::
 barra_salud.tscn::PackedScene::787703600351861078::1769766592::0::1::::<><><>0<>0<><>::
 bleach.wav::AudioStreamWAV::7764580176805538476::1776152418::1776152418::1::::<><><>0<>0<>35d271c80049abcca847bd9e06bbc373<>res://.godot/imported/bleach.wav-450196013f954332587f8e1df568b050.sample::
 clarito.png::CompressedTexture2D::8739596380310591085::1776152418::1776152418::1::::<><><>0<>0<>b3d65f8257f3a25b337d203be8383e25<>res://.godot/imported/clarito.png-c0108ba3a6612e72aae2cb84b2f62231.ctex::
 control.gd::GDScript::1215726667227415089::1769766592::0::1::::<>Control<><>0<>0<><>::
+CONTROLES2.png::CompressedTexture2D::1826249758147728500::1777456084::1777456106::1::::<><><>0<>0<>208a4404372b6dc08d976e0a20ec3996<>res://.godot/imported/CONTROLES2.png-b0b51cc00abdc738e2a459eee97eefe5.ctex::
 Copilot_20260209_120041.png::CompressedTexture2D::5690945676836497062::1771414754::1771414758::1::::<><><>0<>0<>a57f453f2862c59151779f93d70ee382<>res://.godot/imported/Copilot_20260209_120041.png-7091d8cd7624ba014917378ed34ce9cb.ctex::
 export_presets.cfg::TextFile::-1::1777363481::0::1::::<><><>0<>0<><>::
 Game.gd::GDScript::7708427489245098873::1774428199::0::1::::<>Node<><>0<>0<><>::
@@ -4641,10 +4642,10 @@ Sun_Yellow_02-512x512.png::CompressedTexture2D::76832241487154486::1672140074::1
 Sun_Yellow_03-512x512.png::CompressedTexture2D::2671090974917210542::1672140120::1776069352::1::::<><><>0<>0<>90e7f767fdd9cbe9b51c7b2c525b3ded<>res://.godot/imported/Sun_Yellow_03-512x512.png-5537f3e52de389ce1931e507eef8f709.ctex::
 Sun_Yellow_04-512x512.png::CompressedTexture2D::9182487975285079792::1672140169::1776069352::1::::<><><>0<>0<>6603f62185965593d92b09e0afbc43a6<>res://.godot/imported/Sun_Yellow_04-512x512.png-48c05a80af359e245875db81b699b0cf.ctex::
 Sun_Yellow_05-512x512.png::CompressedTexture2D::5192904595193501446::1672140210::1776069352::1::::<><><>0<>0<>b3c6cc3dda76a07602bf912baafa2027<>res://.godot/imported/Sun_Yellow_05-512x512.png-8f8c2f8c3d2210dc7319c659ce4ed0e7.ctex::
-::res://Scenes/::1777366146
+::res://Scenes/::1777375598
 Background_0.png::CompressedTexture2D::8008277965292834295::1769766591::1769766591::1::::<><><>0<>0<>4cbdb18515f6cf5bca3a1c845de4acbb<>res://.godot/imported/Background_0.png-a254ae9fedf56587288ac0866aaccb1e.ctex::
 coins.tscn::PackedScene::8245928175683633229::1774256904::0::1::::<><><>0<>0<><>::uid://j00dtf6yovjl::::res://Scripts/coins.gd<>uid://dncuitfxjy7ng::::res://Assets/Coins_16x16/PNG/Coin_One.png<>uid://bhvpslhb8otjy::::res://Sounds/coin_sounds/coin2.wav
-controles.tscn::PackedScene::514254853115422391::1777360461::0::1::::<><><>0<>0<><>::uid://c5xsp50gkry4u::::res://scripts/controles.gd<>uid://dr61ri1ldwtu8::::res://Icono/controles.png<>uid://b7mtyx0310bsa::::res://Fuentes/dogica/TTF/dogicapixel.ttf<>uid://k4gdavo25o5a::::res://Sounds/click.wav<>uid://btgqfsqphvf25::::res://Assets/Background/rojo.jpg
+controles.tscn::PackedScene::514254853115422391::1777373665::0::1::::<><><>0<>0<><>::uid://c5xsp50gkry4u::::res://Scripts/controles.gd<>uid://dr61ri1ldwtu8::::res://Icono/controles.png<>uid://b7mtyx0310bsa::::res://Fuentes/dogica/TTF/dogicapixel.ttf<>uid://k4gdavo25o5a::::res://Sounds/click.wav<>uid://btgqfsqphvf25::::res://Assets/Background/rojo.jpg
 Copilot_20260209_101803.png::CompressedTexture2D::8060293697139601454::1771414754::1771414758::1::::<><><>0<>0<>32bd2e5d08bf1689af7cf9c9bb66f672<>res://.godot/imported/Copilot_20260209_101803.png-1df180b4b5d528f46459fe2a627351f7.ctex::
 Detalles.tscn::PackedScene::3913136582969116158::1775815026::0::1::::<><><>0<>0<><>::uid://dgspoh2hx068g::::res://Scripts/detalles.gd<>uid://cgv6ivbx2usab::::res://Fuentes/dogica/TTF/dogicapixelbold.ttf<>uid://b7mtyx0310bsa::::res://Fuentes/dogica/TTF/dogicapixel.ttf<>uid://bnrc8581650m5::::res://Assets/Trap and Weapon/Suriken.png<>uid://k4gdavo25o5a::::res://Sounds/click.wav<>uid://huemn6fs8kn0::::res://Assets/Background/fondogris.png<>uid://c5brnqq2eh0o4::::res://Assets/Animate Spikes/Animate Spikes/spikes.png<>uid://cegy1spat8aj0::::res://Assets/32x32 Portal Asset Pack/32x32 Portal Asset Pack/portal1_spritesheet.png
 detalles_2.tscn::PackedScene::1175920684339205901::1776164732::0::1::::<><><>0<>0<><>::uid://dketumtube7k1::::res://Scripts/detalles_2.gd<>uid://cgv6ivbx2usab::::res://Fuentes/dogica/TTF/dogicapixelbold.ttf<>uid://b7mtyx0310bsa::::res://Fuentes/dogica/TTF/dogicapixel.ttf<>uid://b7ua0nsa53s83::::res://Assets/Forest_Monsters_FREE/Mushroom/Mushroom without VFX/Mushroom-Run.png<>uid://djy2auiwgxm6e::::res://Assets/AnimatedPotions 16x16/Dark Green Potion/Potion.png<>uid://k4gdavo25o5a::::res://Sounds/click.wav<>uid://huemn6fs8kn0::::res://Assets/Background/fondogris.png
@@ -4688,15 +4689,15 @@ pinchos_2.tscn::PackedScene::6582761875690291087::1776767858::0::1::::<><><>0<>0
 pocion.tscn::PackedScene::5692884945279128510::1771316599::0::1::::<><><>0<>0<><>::uid://doialxanayd1e::::res://Scripts/pocion.gd<>uid://djy2auiwgxm6e::::res://Assets/AnimatedPotions 16x16/Dark Green Potion/Potion.png<>uid://ddiqruvuk5wdp::::res://Sounds/health-pickup-6860.mp3
 pocion_2.tscn::PackedScene::1543593986252851861::1771316599::0::1::::<><><>0<>0<><>::uid://cbfl0l6dbudj4::::res://Scripts/pocion_2.gd<>uid://dsni5s0p7vvpj::::res://Assets/All Potions/Blue potions/poção azul.png<>uid://ddiqruvuk5wdp::::res://Sounds/health-pickup-6860.mp3
 portal.tscn::PackedScene::8325373429792680697::1769766591::0::1::::<><><>0<>0<><>::uid://cegy1spat8aj0::::res://Assets/32x32 Portal Asset Pack/32x32 Portal Asset Pack/portal1_spritesheet.png<>uid://bqi54es2mx12w::::res://Scripts/portal.gd
-regla.tscn::PackedScene::1460835923463443675::1777360461::0::1::::<><><>0<>0<><>::uid://bghux001bc6pn::::res://Scripts/regla.gd<>uid://cgv6ivbx2usab::::res://Fuentes/dogica/TTF/dogicapixelbold.ttf<>uid://b7mtyx0310bsa::::res://Fuentes/dogica/TTF/dogicapixel.ttf<>uid://ry1p5lo8806u::::res://Scripts/label_2.gd<>uid://dawbck2r440q::::res://Scripts/label_3.gd<>uid://k4gdavo25o5a::::res://Sounds/click.wav<>uid://huemn6fs8kn0::::res://Assets/Background/fondogris.png
+regla.tscn::PackedScene::1460835923463443675::1777375598::0::1::::<><><>0<>0<><>::uid://bghux001bc6pn::::res://Scripts/regla.gd<>uid://cgv6ivbx2usab::::res://Fuentes/dogica/TTF/dogicapixelbold.ttf<>uid://b7mtyx0310bsa::::res://Fuentes/dogica/TTF/dogicapixel.ttf<>uid://ry1p5lo8806u::::res://Scripts/label_2.gd<>uid://dawbck2r440q::::res://Scripts/label_3.gd<>uid://k4gdavo25o5a::::res://Sounds/click.wav<>uid://huemn6fs8kn0::::res://Assets/Background/fondogris.png
 sueloveneno.tscn::PackedScene::6114637230429542965::1775550353::0::1::::<><><>0<>0<><>::uid://b4ry3l063ijk8::::res://Scripts/sueloveneno.gd<>uid://dfnt8dohc5767::::res://Scripts/pinchos.gd<>uid://bv20cqq2bs7je::::res://Assets/Background/Dimensional_Portal.png<>uid://druswm8b1d213::::res://Sounds/homemadeoof-47509.mp3
 trampa.tscn::PackedScene::5341066627263324729::1774258165::0::1::::<><><>0<>0<><>::uid://cqgq8djs2rsrj::::res://Scripts/trampa.gd<>uid://bnrc8581650m5::::res://Assets/Trap and Weapon/Suriken.png<>uid://druswm8b1d213::::res://Sounds/homemadeoof-47509.mp3
 veneno.tscn::PackedScene::3517610519369447423::1776933973::0::1::::<><><>0<>0<><>::uid://chiu1cgvoqten::::res://Scripts/veneno.gd<>uid://c8txapfff2qu8::::res://Assets/AnimatedPotions 16x16/Acid Potion/Potion.png
 Vida.tscn::PackedScene::4443007183915250594::1776164828::0::1::::<><><>0<>0<><>::uid://dcs7o0rsa1s1n::::res://Scripts/vida.gd<>uid://b7mtyx0310bsa::::res://Fuentes/dogica/TTF/dogicapixel.ttf
-::res://Scripts/::1777363037
+::res://Scripts/::1777375524
 coins.gd::GDScript::684833325903482017::1773049164::0::1::::<>Area2D<><>0<>0<><>::
 Coleccion.tres.gd::GDScript::2051061424862792869::1769766591::0::1::::<>CanvasLayer<><>0<>0<><>::
-controles.gd::GDScript::6927108672256205814::1777360461::0::1::::<>Control<><>0<>0<><>::
+controles.gd::GDScript::6927108672256205814::1777374401::0::1::::<>Control<><>0<>0<><>::
 detalles.gd::GDScript::7618490078209712444::1769766591::0::1::::<>Node2D<><>0<>0<><>::
 detalles_2.gd::GDScript::7870597997758251870::1769766591::0::1::::<>Node2D<><>0<>0<><>::
 detalles_3.gd::GDScript::5206145862885563564::1769766591::0::1::::<>Node2D<><>0<>0<><>::
@@ -4707,7 +4708,7 @@ enemy.gd::GDScript::4919497593570597649::1772016255::0::1::::<>CharacterBody2D<>
 enemy_2.gd::GDScript::7198168989405120326::1776769563::0::1::::<>CharacterBody2D<><>0<>0<><>::
 enemy_3.gd::GDScript::7939736610628945541::1771935943::0::1::::<>CharacterBody2D<><>0<>0<><>::
 fire.gd::GDScript::7535018810718118894::1775550353::0::1::::<>Node2D<><>0<>0<><>::
-jugador.gd::GDScript::2341707827205433362::1777363037::0::1::::<>CharacterBody2D<><>0<>0<><>::
+jugador.gd::GDScript::2341707827205433362::1777375524::0::1::::<>CharacterBody2D<><>0<>0<><>::
 label_2.gd::GDScript::1244362430039361582::1769766591::0::1::::<>Label<><>0<>0<><>::
 label_3.gd::GDScript::211904212294257070::1769766591::0::1::::<>Label<><>0<>0<><>::
 main_menu.gd::GDScript::7725151506479149799::1775643531::0::1::::<>Control<><>0<>0<><>::
@@ -4729,7 +4730,7 @@ pn2.gd::GDScript::2579350909418742947::1769766591::0::1::::<>Area2D<><>0<>0<><>:
 pocion.gd::GDScript::8158441736405850084::1770020463::0::1::::<>Area2D<><>0<>0<><>::
 pocion_2.gd::GDScript::4854065257346807851::1773048890::0::1::::<>Area2D<><>0<>0<><>::
 portal.gd::GDScript::3527830740883940844::1769766591::0::1::::<>Area2D<><>0<>0<><>::
-regla.gd::GDScript::2823261155801492007::1777360461::0::1::::<>Control<><>0<>0<><>::
+regla.gd::GDScript::2823261155801492007::1777373395::0::1::::<>Control<><>0<>0<><>::
 ResultadoMision.gd::GDScript::7014940850375975439::1774428199::0::1::::<>CanvasLayer<><>0<>0<><>::
 sueloveneno.gd::GDScript::4458499398893991353::1775550353::0::1::::<>Node2D<><>0<>0<><>::
 trampa.gd::GDScript::5909279707530102347::1775550353::0::1::::<>CharacterBody2D<><>0<>0<><>::

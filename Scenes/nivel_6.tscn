@@ -6,9 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://dg6kn65l0f78g" path="res://Scenes/pinchos.tscn" id="3_wjf4k"]
 [ext_resource type="Texture2D" uid="uid://blgbce66ccfnh" path="res://space_spheremaps/lunita.webp" id="15_pjykv"]
 [ext_resource type="PackedScene" uid="uid://dw68xlihcg8fd" path="res://Scenes/menupausa.tscn" id="15_wjf4k"]
-[ext_resource type="PackedScene" uid="uid://cndw8ox6w8duc" path="res://Scenes/pocion.tscn" id="16_46kbs"]
 [ext_resource type="PackedScene" uid="uid://c010ekbvplouh" path="res://Scenes/pinchos_2.tscn" id="16_cu4cd"]
 [ext_resource type="AudioStream" uid="uid://divhrbi7d6wqm" path="res://bleach.wav" id="16_pjykv"]
+[ext_resource type="PackedScene" uid="uid://v8y1dfet2jqj" path="res://Scenes/pocion_2.tscn" id="17_46kbs"]
 [ext_resource type="Texture2D" uid="uid://1fn4g2y0vq7n" path="res://negropuro.png" id="17_cu4cd"]
 [ext_resource type="PackedScene" uid="uid://b4khxde14clru" path="res://Scenes/Vida.tscn" id="28_m0vvf"]
 [ext_resource type="PackedScene" uid="uid://bqd7schgknnyt" path="res://Scenes/veneno.tscn" id="29_m0vvf"]
@@ -729,7 +729,8 @@ tile_map_data = PackedByteArray("AAD//ywAAAAAAAIAAAAAACwAAAAAAAIAAAABACwAAAAAAAI
 tile_set = SubResource("TileSet_tyyu1")
 
 [node name="veneno" parent="." unique_id=1053418458 instance=ExtResource("29_m0vvf")]
-position = Vector2(1230, 596)
+visible = false
+position = Vector2(1258, 592)
 collision_mask = 16
 
 [node name="Coins26" parent="." unique_id=1136885388 instance=ExtResource("32_djxub")]
@@ -738,7 +739,7 @@ collision_mask = 16
 id_moneda = "m17"
 
 [node name="jugador" parent="." unique_id=913443093 instance=ExtResource("32_kgk1w")]
-position = Vector2(1231, 695)
+position = Vector2(1261, 689)
 scale = Vector2(0.9113586, 1.0154567)
 start_facing_left = true
 
@@ -784,46 +785,6 @@ texture = ExtResource("15_pjykv")
 stream = ExtResource("16_pjykv")
 autoplay = true
 
-[node name="Pocion" parent="." unique_id=6193484 instance=ExtResource("16_46kbs")]
-position = Vector2(1120, 325)
-collision_layer = 1
-
-[node name="Pocion10" parent="." unique_id=647596967 instance=ExtResource("16_46kbs")]
-position = Vector2(1120, 325)
-collision_layer = 1
-
-[node name="Pocion2" parent="." unique_id=1643332116 instance=ExtResource("16_46kbs")]
-position = Vector2(589, -15)
-collision_layer = 1
-
-[node name="Pocion3" parent="." unique_id=1134523066 instance=ExtResource("16_46kbs")]
-position = Vector2(-17, 213)
-collision_layer = 1
-
-[node name="Pocion4" parent="." unique_id=623543084 instance=ExtResource("16_46kbs")]
-position = Vector2(249, 192)
-collision_layer = 1
-
-[node name="Pocion11" parent="." unique_id=1976998920 instance=ExtResource("16_46kbs")]
-position = Vector2(539, 270)
-collision_layer = 1
-
-[node name="Pocion6" parent="." unique_id=92303286 instance=ExtResource("16_46kbs")]
-position = Vector2(973, 587)
-collision_layer = 1
-
-[node name="Pocion7" parent="." unique_id=1749378393 instance=ExtResource("16_46kbs")]
-position = Vector2(264, 589)
-collision_layer = 1
-
-[node name="Pocion8" parent="." unique_id=1313869545 instance=ExtResource("16_46kbs")]
-position = Vector2(709, 455)
-collision_layer = 1
-
-[node name="Pocion9" parent="." unique_id=1134695632 instance=ExtResource("16_46kbs")]
-position = Vector2(460, 606)
-collision_layer = 1
-
 [node name="transicion" type="Sprite2D" parent="." unique_id=70207956]
 position = Vector2(550.99994, 394.50003)
 scale = Vector2(1.8085936, 1.3837891)
@@ -850,6 +811,36 @@ offset_left = 378.66684
 offset_top = 184.66666
 offset_right = 1128.6669
 offset_bottom = 420.66666
+
+[node name="pocion6" parent="." unique_id=1598628101 instance=ExtResource("17_46kbs")]
+position = Vector2(98.00006, 55.00003)
+scale = Vector2(0.8, 0.8)
+collision_mask = 16
+
+[node name="pocion7" parent="." unique_id=495026864 instance=ExtResource("17_46kbs")]
+position = Vector2(1123, 324.99997)
+scale = Vector2(0.8, 0.8)
+collision_mask = 16
+
+[node name="pocion8" parent="." unique_id=52717191 instance=ExtResource("17_46kbs")]
+position = Vector2(298.00006, 203)
+scale = Vector2(0.8, 0.8)
+collision_mask = 16
+
+[node name="pocion9" parent="." unique_id=489922668 instance=ExtResource("17_46kbs")]
+position = Vector2(838, 289)
+scale = Vector2(0.8, 0.8)
+collision_mask = 16
+
+[node name="pocion10" parent="." unique_id=1313359034 instance=ExtResource("17_46kbs")]
+position = Vector2(791, 606)
+scale = Vector2(0.8, 0.8)
+collision_mask = 16
+
+[node name="pocion11" parent="." unique_id=1850524722 instance=ExtResource("17_46kbs")]
+position = Vector2(1194, 606)
+scale = Vector2(0.8, 0.8)
+collision_mask = 16
 
 [editable path="jugador/Vida"]
 [editable path="Menupausa"]

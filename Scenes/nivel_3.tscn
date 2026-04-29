@@ -1306,7 +1306,6 @@ text = "fbcalfeb
 stream = ExtResource("22_mepvm")
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=556370330]
-visible = false
 position = Vector2(686, 354.5)
 scale = Vector2(1.3457031, 0.7548828)
 texture = ExtResource("23_2v3mx")

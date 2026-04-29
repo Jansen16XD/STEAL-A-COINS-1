@@ -22,7 +22,6 @@
 [ext_resource type="PackedScene" uid="uid://bnb34w848pgft" path="res://Scenes/fire.tscn" id="13_ybmds"]
 [ext_resource type="PackedScene" uid="uid://1qqmngll3bi6" path="res://Scenes/enemy.tscn" id="17_5vihe"]
 [ext_resource type="AudioStream" uid="uid://dtpjfhupkc2im" path="res://Sounds/Kevin MacLeod - 8bit Dungeon Boss NO COPYRIGHT 8-bit Music.mp3" id="18_448gy"]
-[ext_resource type="PackedScene" uid="uid://cndw8ox6w8duc" path="res://Scenes/pocion.tscn" id="18_pdtf5"]
 [ext_resource type="PackedScene" uid="uid://cdu1t1lpecbyw" path="res://Scenes/moving_plataform_4.tscn" id="18_s4kv5"]
 [ext_resource type="PackedScene" uid="uid://c36ka6kmx2jog" path="res://Scenes/enemy2.tscn" id="21_o36qj"]
 [ext_resource type="PackedScene" uid="uid://b1dplj0r6bey2" path="res://Scenes/moving_plataform_6.tscn" id="22_448gy"]
@@ -713,18 +712,6 @@ stream = ExtResource("18_448gy")
 volume_db = -0.377
 autoplay = true
 
-[node name="Pocion" parent="." unique_id=1693756801 instance=ExtResource("18_pdtf5")]
-position = Vector2(565, 516)
-collision_layer = 1
-
-[node name="Pocion3" parent="." unique_id=1390958269 instance=ExtResource("18_pdtf5")]
-position = Vector2(502, 278)
-collision_layer = 1
-
-[node name="Pocion4" parent="." unique_id=6193484 instance=ExtResource("18_pdtf5")]
-position = Vector2(1197, 16)
-collision_layer = 1
-
 [node name="moving_plataform4" parent="." unique_id=1269096868 instance=ExtResource("18_s4kv5")]
 position = Vector2(1257, 641)
 
@@ -880,6 +867,18 @@ position = Vector2(1121, 356)
 
 [node name="pocion2" parent="." unique_id=1598628101 instance=ExtResource("23_g6hel")]
 position = Vector2(100, 70)
+collision_mask = 16
+
+[node name="pocion3" parent="." unique_id=680558303 instance=ExtResource("23_g6hel")]
+position = Vector2(559, 524)
+collision_mask = 16
+
+[node name="pocion4" parent="." unique_id=517165460 instance=ExtResource("23_g6hel")]
+position = Vector2(1094, 264)
+collision_mask = 16
+
+[node name="pocion5" parent="." unique_id=118554487 instance=ExtResource("23_g6hel")]
+position = Vector2(1193, 7)
 collision_mask = 16
 
 [editable path="jugador/Vida"]
