@@ -1490,18 +1490,13 @@ stream = ExtResource("8_k6xhl")
 volume_db = -5.293
 autoplay = true
 
-[node name="Coins2" parent="." unique_id=1796304673 instance=ExtResource("12_paidj")]
-position = Vector2(1042, 598)
-collision_mask = 16
-id_moneda = "m13"
-
 [node name="Coins3" parent="." unique_id=1727454762 instance=ExtResource("12_paidj")]
 position = Vector2(818, 591)
 collision_mask = 16
 id_moneda = "m14"
 
 [node name="Coins4" parent="." unique_id=539652242 instance=ExtResource("12_paidj")]
-position = Vector2(545, 593)
+position = Vector2(540, 591)
 collision_mask = 16
 id_moneda = "m15"
 
