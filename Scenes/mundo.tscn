@@ -582,9 +582,14 @@ collision_mask = 16
 id_moneda = "m11"
 
 [node name="Coins" parent="." unique_id=825900155 instance=ExtResource("7_i8avv")]
-position = Vector2(92, 90)
+position = Vector2(1303, 114)
 collision_mask = 16
 id_moneda = "m12"
+
+[node name="Coins2" parent="." unique_id=426282340 instance=ExtResource("7_i8avv")]
+position = Vector2(102, 90)
+collision_mask = 16
+id_moneda = "m13"
 
 [node name="Trampa7" parent="." unique_id=997750259 instance=ExtResource("3_has1v")]
 position = Vector2(1100, 115)
@@ -621,6 +626,9 @@ position = Vector2(237, 226)
 
 [node name="Pinchos7" parent="." unique_id=747617357 instance=ExtResource("13_6bs12")]
 position = Vector2(1295, 178)
+
+[node name="Pinchos8" parent="." unique_id=1511124820 instance=ExtResource("13_6bs12")]
+position = Vector2(1325, 178)
 
 [node name="Menupausa" parent="." unique_id=1550576138 instance=ExtResource("12_1bodn")]
 process_mode = 3
@@ -774,6 +782,7 @@ metadata/_edit_use_anchors_ = true
 stream = ExtResource("19_f3x5k")
 
 [node name="transicion" type="Sprite2D" parent="CanvasLayer" unique_id=539067763]
+visible = false
 position = Vector2(693, 360.00003)
 scale = Vector2(3.4746988, 4.154639)
 texture = ExtResource("19_d67sf")

@@ -1392,17 +1392,23 @@ position = Vector2(292, 420)
 scale = Vector2(1.1, 1.1)
 
 [node name="Trampa2" parent="." unique_id=928650040 instance=ExtResource("1_qeet1")]
-position = Vector2(989, 181)
+position = Vector2(1033, 181)
 scale = Vector2(1.1, 1.1)
 
 [node name="Pinchos" parent="." unique_id=170126903 instance=ExtResource("15_sselb")]
-position = Vector2(561, 342)
+position = Vector2(548, 342)
+
+[node name="Pinchos4" parent="." unique_id=1511124820 instance=ExtResource("15_sselb")]
+position = Vector2(590, 342)
 
 [node name="Pinchos2" parent="." unique_id=1999771789 instance=ExtResource("15_sselb")]
-position = Vector2(995, 343)
+position = Vector2(967, 338)
+
+[node name="Pinchos5" parent="." unique_id=632896800 instance=ExtResource("15_sselb")]
+position = Vector2(1011, 338)
 
 [node name="Pinchos3" parent="." unique_id=1583001365 instance=ExtResource("15_sselb")]
-position = Vector2(931, 179)
+position = Vector2(982, 179)
 
 [node name="Menupausa" parent="." unique_id=1821771297 instance=ExtResource("3_amwks")]
 process_mode = 3
@@ -1510,12 +1516,12 @@ collision_mask = 16
 id_moneda = "m17"
 
 [node name="Coins7" parent="." unique_id=682248067 instance=ExtResource("12_paidj")]
-position = Vector2(645, 324)
+position = Vector2(632, 327)
 collision_mask = 16
 id_moneda = "m18"
 
 [node name="Coins8" parent="." unique_id=2126179649 instance=ExtResource("12_paidj")]
-position = Vector2(1027, 327)
+position = Vector2(1049, 331)
 collision_mask = 16
 id_moneda = "m19"
 
@@ -1572,17 +1578,26 @@ position = Vector2(630, 587)
 [node name="enemy7" parent="." unique_id=1323831725 instance=ExtResource("15_k6xhl")]
 position = Vector2(393, 584)
 
+[node name="enemy12" parent="." unique_id=1513033430 instance=ExtResource("15_k6xhl")]
+position = Vector2(231, 597)
+
 [node name="enemy8" parent="." unique_id=1520485239 instance=ExtResource("15_k6xhl")]
 position = Vector2(843, 318)
 
 [node name="enemy9" parent="." unique_id=164671331 instance=ExtResource("15_k6xhl")]
 position = Vector2(1232, 308)
 
+[node name="enemy13" parent="." unique_id=79046990 instance=ExtResource("15_k6xhl")]
+position = Vector2(1065, 306)
+
 [node name="enemy10" parent="." unique_id=1901330962 instance=ExtResource("15_k6xhl")]
 position = Vector2(239, 162)
 
+[node name="enemy14" parent="." unique_id=980483768 instance=ExtResource("15_k6xhl")]
+position = Vector2(457, 153)
+
 [node name="Pocion" parent="." unique_id=689518924 instance=ExtResource("18_4k5f8")]
-position = Vector2(758, 98)
+position = Vector2(837, 101)
 collision_layer = 1
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=1585628109]
@@ -1636,6 +1651,7 @@ theme_override_fonts/font = SubResource("FontFile_xiqut")
 theme_override_font_sizes/font_size = 10
 
 [editable path="Pinchos"]
+[editable path="Pinchos4"]
 [editable path="Menupausa"]
 [editable path="Menupausa/Portal"]
 [editable path="Portal2"]

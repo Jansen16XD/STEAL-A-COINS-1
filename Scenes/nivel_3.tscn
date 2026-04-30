@@ -17,7 +17,6 @@
 [ext_resource type="PackedScene" uid="uid://c5byt147eogq3" path="res://Scenes/moving_platadorm_3.tscn" id="16_47o3a"]
 [ext_resource type="PackedScene" uid="uid://cndw8ox6w8duc" path="res://Scenes/pocion.tscn" id="17_bvitb"]
 [ext_resource type="PackedScene" uid="uid://dg6kn65l0f78g" path="res://Scenes/pinchos.tscn" id="18_fpc32"]
-[ext_resource type="PackedScene" uid="uid://1qqmngll3bi6" path="res://Scenes/enemy.tscn" id="19_oh2mj"]
 [ext_resource type="PackedScene" uid="uid://dw68xlihcg8fd" path="res://Scenes/menupausa.tscn" id="20_1nruq"]
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="21_duede"]
 [ext_resource type="AudioStream" uid="uid://daxlko0xjf3im" path="res://Sounds/clock-ticking-60-second-countdown-118231.mp3" id="22_mepvm"]
@@ -967,6 +966,7 @@ _data = {
 }
 
 [node name="nivel_3" type="Node2D" unique_id=830371760]
+position = Vector2(11, 18)
 script = ExtResource("1_jxqql")
 metadata/_edit_vertical_guides_ = [-598.0]
 
@@ -1044,7 +1044,7 @@ rotation = 3.1415925
 
 [node name="Pinchos10" parent="." unique_id=1466474898 instance=ExtResource("18_fpc32")]
 modulate = Color(0.9490196, 0.74509805, 0.98039216, 1)
-position = Vector2(807, 573)
+position = Vector2(807, 572)
 rotation = 3.1415925
 
 [node name="Pinchos11" parent="." unique_id=2091989337 instance=ExtResource("18_fpc32")]
@@ -1177,6 +1177,20 @@ mirar_izquierda = true
 position = Vector2(85, 383)
 mirar_izquierda = true
 
+[node name="enemy14" parent="." unique_id=2004863140 instance=ExtResource("12_io8q0")]
+position = Vector2(1082, 204)
+mirar_izquierda = true
+
+[node name="enemy15" parent="." unique_id=1501916097 instance=ExtResource("12_io8q0")]
+position = Vector2(771, 202)
+mirar_izquierda = true
+
+[node name="enemy16" parent="." unique_id=428304433 instance=ExtResource("12_io8q0")]
+position = Vector2(530, 204)
+
+[node name="enemy17" parent="." unique_id=1724939647 instance=ExtResource("12_io8q0")]
+position = Vector2(127, 202)
+
 [node name="Coins10" parent="." unique_id=88993791 instance=ExtResource("14_litv0")]
 position = Vector2(360, 665)
 collision_mask = 16
@@ -1267,27 +1281,15 @@ collision_layer = 1
 
 [node name="Pinchos2" parent="." unique_id=984980590 instance=ExtResource("18_fpc32")]
 modulate = Color(0.9490196, 0.74509805, 0.98039216, 1)
-position = Vector2(331, 392)
+position = Vector2(331, 389)
 
 [node name="Pinchos3" parent="." unique_id=2092641048 instance=ExtResource("18_fpc32")]
 modulate = Color(0.9490196, 0.74509805, 0.98039216, 1)
-position = Vector2(697, 387)
+position = Vector2(697, 388)
 
 [node name="Pinchos4" parent="." unique_id=1230638783 instance=ExtResource("18_fpc32")]
 modulate = Color(0.9490196, 0.74509805, 0.98039216, 1)
 position = Vector2(1039, 389)
-
-[node name="enemy10" parent="." unique_id=162897818 instance=ExtResource("19_oh2mj")]
-position = Vector2(740, 192)
-
-[node name="enemy8" parent="." unique_id=954469541 instance=ExtResource("19_oh2mj")]
-position = Vector2(1039, 192)
-
-[node name="enemy11" parent="." unique_id=1122566216 instance=ExtResource("19_oh2mj")]
-position = Vector2(426, 192)
-
-[node name="enemy12" parent="." unique_id=14907462 instance=ExtResource("19_oh2mj")]
-position = Vector2(212, 192)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1322742788]
 
