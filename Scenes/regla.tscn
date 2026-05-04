@@ -87,10 +87,10 @@ text = "Reglas:"
 
 [node name="Label2" type="Label" parent="." unique_id=1957333392]
 layout_mode = 0
-offset_left = 65.0
-offset_top = 79.0
-offset_right = 1220.0
-offset_bottom = 615.0
+offset_left = 100.0
+offset_top = 84.0
+offset_right = 1255.0
+offset_bottom = 611.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
@@ -139,7 +139,7 @@ volume_db = -20.0
 [node name="Button" type="Button" parent="." unique_id=162326153]
 layout_mode = 0
 offset_left = 306.0
-offset_top = 636.0
+offset_top = 662.0
 offset_right = 999.0
 offset_bottom = 702.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)

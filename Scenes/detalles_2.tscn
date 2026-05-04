@@ -207,35 +207,35 @@ offset_bottom = 721.0
 color = Color(0.719511, 0.3863731, 0.07306207, 1)
 
 [node name="Titulo" type="Label" parent="." unique_id=84625485]
-offset_left = 137.0
+offset_left = 128.0
 offset_top = 41.0
-offset_right = 1442.0
+offset_right = 1433.0
 offset_bottom = 94.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_h6pr8")
 theme_override_font_sizes/font_size = 55
-text = "Nivel 2: primer enemigo"
+text = "NIVEL 2: PRIMER ENEMIGO"
 
 [node name="Subtitulo Hongo" type="Label" parent="." unique_id=2003430847]
-offset_left = 77.0
-offset_top = 127.0
-offset_right = 627.0
-offset_bottom = 223.0
+offset_left = 37.0
+offset_top = 125.0
+offset_right = 784.0
+offset_bottom = 221.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_h6pr8")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_h6pr8")
-text = "10 de daño
-cada 0.2s"
+text = "Inflige 10 de
+daño por contacto"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Subtitulo Curacion" type="Label" parent="." unique_id=384456614]
-offset_left = 705.0
+offset_left = 837.0
 offset_top = 127.0
 offset_right = 1255.0
 offset_bottom = 220.0
@@ -267,14 +267,14 @@ text = "Seguir
 
 [node name="Hongo" type="AnimatedSprite2D" parent="." unique_id=68608900]
 texture_filter = 1
-position = Vector2(345, 282)
+position = Vector2(418, 277)
 scale = Vector2(5.75, 5.4776254)
 sprite_frames = SubResource("SpriteFrames_h6pr8")
 animation = &"run"
 autoplay = "run"
 
 [node name="Curacion" type="AnimatedSprite2D" parent="." unique_id=789507392]
-position = Vector2(957, 359.00003)
+position = Vector2(1042, 359.00003)
 scale = Vector2(9, 9.092)
 sprite_frames = SubResource("SpriteFrames_vfdky")
 animation = &"pocion"

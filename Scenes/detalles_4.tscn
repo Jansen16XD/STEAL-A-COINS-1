@@ -113,12 +113,12 @@ theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.0431372
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_3cusv")
 theme_override_font_sizes/font_size = 60
-text = "Nivel 4: tercera trampa"
+text = "NIVEL 4: TERCERA TRAMPA"
 
 [node name="Label2" type="Label" parent="." unique_id=1315262347]
-offset_left = 51.0
+offset_left = 23.0
 offset_top = 142.0
-offset_right = 621.0
+offset_right = 755.0
 offset_bottom = 243.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
@@ -126,16 +126,16 @@ theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_3cusv")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_bm7o6")
-text = "15 de daño
-cada 0.2s"
+text = "Inflige 15 de 
+daño por contacto"
 horizontal_alignment = 1
 vertical_alignment = 1
 
 [node name="Label3" type="Label" parent="." unique_id=446306495]
-offset_left = 688.0
-offset_top = 139.0
+offset_left = 801.0
+offset_top = 141.0
 offset_right = 1258.0
-offset_bottom = 240.0
+offset_bottom = 242.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
@@ -164,7 +164,7 @@ text = "Seguir
 "
 
 [node name="Fuego" parent="." unique_id=432058131 instance=ExtResource("4_3cusv")]
-position = Vector2(333, 408.00003)
+position = Vector2(418, 408.00003)
 scale = Vector2(3.5000002, 3.5)
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1054284192]
@@ -172,7 +172,7 @@ stream = ExtResource("5_hv2ts")
 volume_db = -5.474
 
 [node name="Cura" parent="." unique_id=1598628101 instance=ExtResource("7_6kwtb")]
-position = Vector2(770.00006, 219.00002)
+position = Vector2(852.00006, 222.00002)
 scale = Vector2(2.6, 2.6)
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=146815204]

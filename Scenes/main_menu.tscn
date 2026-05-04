@@ -20,6 +20,7 @@
 [ext_resource type="Texture2D" uid="uid://b52boxyxtk7wj" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk1.png" id="18_mkpwh"]
 [ext_resource type="Texture2D" uid="uid://ccuqxi4dtl36n" path="res://Assets/Animate Spikes/Animate Spikes/slimeWalk2.png" id="19_4nkqq"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="20_4nkqq"]
+[ext_resource type="Texture2D" uid="uid://btgqfsqphvf25" path="res://Assets/Background/rojo.jpg" id="21_ehtkc"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_jp6yl"]
 atlas = ExtResource("3_m3bi6")
@@ -638,6 +639,43 @@ animations = [{
 "speed": 11.0
 }]
 
+[sub_resource type="Animation" id="Animation_f3x5k"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_rr27p"]
+resource_name = "juego"
+length = 0.9
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.8333333),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0.54901963, 0.54901963, 0.54901963, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_6dk6o"]
+_data = {
+&"RESET": SubResource("Animation_f3x5k"),
+&"juego": SubResource("Animation_rr27p")
+}
+
 [node name="MainMenu" type="Control" unique_id=1690812792]
 layout_mode = 3
 anchors_preset = 15
@@ -837,6 +875,15 @@ position = Vector2(1227, 103)
 scale = Vector2(5, 4.333)
 sprite_frames = SubResource("SpriteFrames_6dk6o")
 autoplay = "default"
+
+[node name="transicion" type="Sprite2D" parent="." unique_id=8725328]
+position = Vector2(-963.3335, 1370)
+scale = Vector2(7.6287656, 7.5474954)
+texture = ExtResource("21_ehtkc")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=655852561]
+libraries/ = SubResource("AnimationLibrary_6dk6o")
+autoplay = &"juego"
 
 [connection signal="pressed" from="Button" to="." method="_on_comenzar_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_opciones_pressed"]

@@ -95,21 +95,21 @@ theme_override_colors/font_shadow_color = Color(3.7803085, 0, 0.18648337, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_s0c7q")
 theme_override_font_sizes/font_size = 81
-text = "Nivel 6"
+text = "NIVEL 6 FINAL"
 horizontal_alignment = 1
 
 [node name="Subtitulo" type="Label" parent="." unique_id=1259948063]
-offset_left = 276.0
-offset_top = 139.0
-offset_right = 1065.0
-offset_bottom = 197.0
+offset_left = 273.0
+offset_top = 164.0
+offset_right = 1062.0
+offset_bottom = 222.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_s0c7q")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_5fmoo")
-text = "-1 de vida cada 0.2s"
+text = "-1 de vida cada 0.5s"
 horizontal_alignment = 1
 
 [node name="Subtitulo2" type="Label" parent="." unique_id=628313008]
@@ -123,13 +123,14 @@ theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_s0c7q")
 theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_5fmoo")
-text = "-1 de vida cada 0.45s
-
+text = "
 En el mapa solo habrá pinchos
 
 intenta  evitarlo y consigue la ultima 
 
-moneda que hay en el mapa"
+moneda lo antes posible.
+
+(NO HAY CONTADOR)"
 horizontal_alignment = 1
 
 [node name="Button" type="Button" parent="." unique_id=1010612238]
@@ -153,7 +154,6 @@ stream = ExtResource("4_g2ntk")
 volume_db = -5.474
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=1934651516]
-visible = false
 position = Vector2(684, 380)
 scale = Vector2(1.4785156, 1)
 texture = ExtResource("5_uim55")

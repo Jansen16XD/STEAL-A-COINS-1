@@ -782,7 +782,6 @@ metadata/_edit_use_anchors_ = true
 stream = ExtResource("19_f3x5k")
 
 [node name="transicion" type="Sprite2D" parent="CanvasLayer" unique_id=539067763]
-visible = false
 position = Vector2(693, 360.00003)
 scale = Vector2(3.4746988, 4.154639)
 texture = ExtResource("19_d67sf")

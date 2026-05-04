@@ -12,7 +12,7 @@
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ehmkb"]
 bg_color = Color(0.50980395, 0.05490196, 0.039215688, 1)
 border_width_left = 7
-border_width_top = 7
+border_width_top = 6
 border_width_right = 9
 border_width_bottom = 7
 border_color = Color(1, 0.7372549, 0, 1)
@@ -259,23 +259,22 @@ offset_right = 1352.0
 offset_bottom = 711.0
 color = Color(0.011764706, 0.07450981, 0.3137255, 1)
 
-[node name="Label" type="Label" parent="ColorRect10" unique_id=781428062]
-layout_mode = 0
-offset_left = 87.0
-offset_top = -581.0
-offset_right = 1392.0
-offset_bottom = -528.0
+[node name="Label" type="Label" parent="." unique_id=781428062]
+offset_left = 81.0
+offset_top = 44.0
+offset_right = 1386.0
+offset_bottom = 97.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 55
-text = "Nivel 1:Primeras trampas"
+text = "NIVEL 1: PRIMERAS TRAMPAS"
 
 [node name="Trampa" type="Label" parent="." unique_id=1210424778]
-offset_left = 81.0
+offset_left = 29.0
 offset_top = 158.0
-offset_right = 409.0
+offset_right = 504.0
 offset_bottom = 231.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
@@ -283,35 +282,35 @@ theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_ehmkb")
-text = "15 de daño 
-cada 0.2s"
+text = "Inflige 15 de
+ daño por contacto"
 horizontal_alignment = 1
 
 [node name="Pinchos" type="Label" parent="." unique_id=778807546]
-offset_left = 522.0
-offset_top = 160.0
-offset_right = 783.0
-offset_bottom = 232.0
+offset_left = 514.0
+offset_top = 158.0
+offset_right = 926.0
+offset_bottom = 230.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
 theme_override_font_sizes/font_size = 25
 theme_override_styles/normal = SubResource("StyleBoxFlat_ehmkb")
-text = "15 de daño 
-cada 0.2s"
+text = "Inflige 15 de 
+daño por contacto"
 horizontal_alignment = 1
 
 [node name="Portal" type="Label" parent="." unique_id=2033636085]
-offset_left = 888.0
+offset_left = 937.0
 offset_top = 158.0
-offset_right = 1269.0
-offset_bottom = 235.0
+offset_right = 1286.0
+offset_bottom = 234.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(0.49411765, 0.07058824, 0, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_mqihf")
-theme_override_font_sizes/font_size = 21
+theme_override_font_sizes/font_size = 20
 theme_override_styles/normal = SubResource("StyleBoxFlat_ehmkb")
 text = "Usa el portal para
 teletransportarte"
@@ -331,20 +330,20 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_wvp5v")
 text = "Comenzar"
 
 [node name="Trampa2" type="AnimatedSprite2D" parent="." unique_id=1182529795]
-position = Vector2(251.00002, 357)
+position = Vector2(278, 357.00003)
 scale = Vector2(5.75, 4.9375)
 sprite_frames = SubResource("SpriteFrames_d2vfm")
 autoplay = "default"
 
 [node name="Portal2" type="AnimatedSprite2D" parent="." unique_id=2089907081]
-position = Vector2(1073, 364)
+position = Vector2(1109, 363)
 scale = Vector2(4.593751, 5.1875014)
 sprite_frames = SubResource("SpriteFrames_rev87")
 autoplay = "default"
 
 [node name="Pinchos2" type="Sprite2D" parent="." unique_id=590454128]
 texture_filter = 1
-position = Vector2(656, 362)
+position = Vector2(725, 362.00003)
 scale = Vector2(2.3285713, 1.5928572)
 texture = ExtResource("7_wvp5v")
 

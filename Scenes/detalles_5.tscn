@@ -32,42 +32,6 @@ bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5an60"]
 bg_color = Color(0.9882353, 0.73333335, 0, 1)
 
-[sub_resource type="Animation" id="Animation_cfapw"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_i0yh6"]
-resource_name = "trampas1"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_5an60"]
-_data = {
-&"RESET": SubResource("Animation_cfapw"),
-&"trampas1": SubResource("Animation_i0yh6")
-}
-
 [sub_resource type="AtlasTexture" id="AtlasTexture_23p4j"]
 atlas = ExtResource("3_5an60")
 region = Rect2(192, 64, 64, 64)
@@ -165,6 +129,42 @@ animations = [{
 "speed": 10.0
 }]
 
+[sub_resource type="Animation" id="Animation_cfapw"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_i0yh6"]
+resource_name = "trampas1"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_5an60"]
+_data = {
+&"RESET": SubResource("Animation_cfapw"),
+&"trampas1": SubResource("Animation_i0yh6")
+}
+
 [node name="detalles_5" type="Node2D" unique_id=2009570502]
 script = ExtResource("1_hdicr")
 
@@ -193,42 +193,43 @@ offset_bottom = 720.0
 color = Color(0.1175, 0.47, 0, 1)
 
 [node name="sueloveneno" parent="." unique_id=321802248 instance=ExtResource("6_hdicr")]
-position = Vector2(424, 397)
+position = Vector2(394.00003, 395)
 rotation = -1.5707964
 scale = Vector2(6, 6)
 
 [node name="Titulo" type="Label" parent="." unique_id=512915348]
-offset_left = 69.0
-offset_top = 38.0
-offset_right = 1374.0
-offset_bottom = 91.0
+offset_left = 52.0
+offset_top = 43.0
+offset_right = 1658.0
+offset_bottom = 96.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(3.4611928, 0, 0.15817644, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_hdicr")
-theme_override_font_sizes/font_size = 60
-text = "Nivel 5: Cuarta trampa"
+theme_override_font_sizes/font_size = 45
+text = "NIVEL 5: CUARTA Y QUINTA TRAMPA"
 
 [node name="Subtitulo" type="Label" parent="." unique_id=1625861455]
-offset_left = 44.0
-offset_top = 148.0
-offset_right = 676.0
-offset_bottom = 249.0
+offset_left = 61.0
+offset_top = 145.0
+offset_right = 654.0
+offset_bottom = 250.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_hdicr")
-theme_override_font_sizes/font_size = 45
+theme_override_font_sizes/font_size = 30
 theme_override_styles/normal = SubResource("StyleBoxFlat_whcjo")
-text = "15 de daño
-cada 0.2s"
+text = "Inflige 15 de 
+daño por contacto
+(mas dps )"
 horizontal_alignment = 1
 
 [node name="Subtitulo2" type="Label" parent="." unique_id=136378005]
-offset_left = 695.0
-offset_top = 146.0
-offset_right = 1327.0
-offset_bottom = 247.0
+offset_left = 745.0
+offset_top = 144.0
+offset_right = 1287.0
+offset_bottom = 249.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(1, 0.3019608, 0.10980392, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
@@ -260,21 +261,22 @@ text = "Seguir
 stream = ExtResource("5_whcjo")
 volume_db = -5.474
 
-[node name="transicion" type="Sprite2D" parent="." unique_id=953316526]
-position = Vector2(684, 380)
-scale = Vector2(1.4785156, 1)
-texture = ExtResource("6_tsjc1")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="transicion" unique_id=1810551942]
-libraries/ = SubResource("AnimationLibrary_5an60")
-autoplay = &"trampas1"
-
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=413372570]
 texture_filter = 1
-position = Vector2(1000, 364.00003)
+position = Vector2(1024, 364.00003)
 scale = Vector2(4, 4.893)
 sprite_frames = SubResource("SpriteFrames_5an60")
 animation = &"run"
 autoplay = "run"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1810551942]
+root_node = NodePath("transicion")
+libraries/ = SubResource("AnimationLibrary_5an60")
+autoplay = &"trampas1"
+
+[node name="transicion" type="Sprite2D" parent="AnimationPlayer" unique_id=953316526]
+position = Vector2(684, 380)
+scale = Vector2(1.4785156, 1)
+texture = ExtResource("6_tsjc1")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

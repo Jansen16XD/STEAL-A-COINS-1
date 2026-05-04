@@ -1588,9 +1588,6 @@ position = Vector2(1065, 306)
 [node name="enemy10" parent="." unique_id=1901330962 instance=ExtResource("15_k6xhl")]
 position = Vector2(239, 162)
 
-[node name="enemy14" parent="." unique_id=980483768 instance=ExtResource("15_k6xhl")]
-position = Vector2(457, 153)
-
 [node name="Pocion" parent="." unique_id=689518924 instance=ExtResource("18_4k5f8")]
 position = Vector2(837, 101)
 collision_layer = 1

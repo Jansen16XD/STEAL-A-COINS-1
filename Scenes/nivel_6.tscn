@@ -684,12 +684,12 @@ scale = Vector2(1.4, 1.4)
 position = Vector2(773.00006, 149)
 scale = Vector2(1.4, 1.4)
 
-[node name="Pinchos45" parent="." unique_id=813500759 instance=ExtResource("16_cu4cd")]
-position = Vector2(588.00006, 149)
-scale = Vector2(1.4, 1.4)
-
 [node name="Pinchos46" parent="." unique_id=714671737 instance=ExtResource("16_cu4cd")]
 position = Vector2(367, 149.00002)
+scale = Vector2(1.4, 1.4)
+
+[node name="Pinchos53" parent="." unique_id=1216013308 instance=ExtResource("16_cu4cd")]
+position = Vector2(575.00006, 148)
 scale = Vector2(1.4, 1.4)
 
 [node name="Pinchos39" parent="." unique_id=23832496 instance=ExtResource("16_cu4cd")]
@@ -783,6 +783,7 @@ texture = ExtResource("15_pjykv")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=178554683]
 stream = ExtResource("16_pjykv")
+volume_db = -5.778
 autoplay = true
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=70207956]
@@ -796,7 +797,7 @@ autoplay = &"juego"
 
 [node name="Menupausa" parent="." unique_id=1821771297 instance=ExtResource("15_wjf4k")]
 process_mode = 3
-position = Vector2(1006, -38)
+position = Vector2(1010, -38)
 scale = Vector2(0.3, 0.3)
 
 [node name="ColorRect" parent="Menupausa" index="0" unique_id=2112459776]
