@@ -5,6 +5,7 @@
 [ext_resource type="FontFile" uid="uid://b7mtyx0310bsa" path="res://Fuentes/dogica/TTF/dogicapixel.ttf" id="3_b5t4b"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="4_g2ntk"]
 [ext_resource type="Texture2D" uid="uid://huemn6fs8kn0" path="res://Assets/Background/fondogris.png" id="5_uim55"]
+[ext_resource type="Texture2D" uid="uid://b7i8bd7d10dk0" path="res://pflipando.png" id="6_s0c7q"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5fmoo"]
 bg_color = Color(0.54509807, 0.0627451, 0.043137256, 1)
@@ -86,10 +87,10 @@ offset_bottom = 566.0
 color = Color(0.23529412, 0.23529412, 0.23529412, 1)
 
 [node name="Titulo" type="Label" parent="." unique_id=76083789]
-offset_left = 9.0
-offset_top = 38.0
-offset_right = 1314.0
-offset_bottom = 109.0
+offset_left = -104.0
+offset_top = 35.0
+offset_right = 1201.0
+offset_bottom = 106.0
 theme_override_colors/font_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/font_shadow_color = Color(3.7803085, 0, 0.18648337, 1)
 theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
@@ -152,6 +153,11 @@ text = "Seguir
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=780621268]
 stream = ExtResource("4_g2ntk")
 volume_db = -5.474
+
+[node name="Pflipando" type="Sprite2D" parent="." unique_id=1123811016]
+position = Vector2(1166, 70)
+scale = Vector2(0.3600001, 0.30349997)
+texture = ExtResource("6_s0c7q")
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=1934651516]
 position = Vector2(684, 380)

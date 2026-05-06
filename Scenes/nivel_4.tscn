@@ -839,19 +839,23 @@ modulate = Color(0.99215686, 0.45882353, 0, 1)
 position = Vector2(1121, 356)
 
 [node name="pocion2" parent="." unique_id=1598628101 instance=ExtResource("23_g6hel")]
-position = Vector2(100, 70)
+position = Vector2(111, 79)
+scale = Vector2(0.8, 0.8)
 collision_mask = 16
 
 [node name="pocion3" parent="." unique_id=680558303 instance=ExtResource("23_g6hel")]
-position = Vector2(559, 524)
+position = Vector2(573, 536)
+scale = Vector2(0.8, 0.8)
 collision_mask = 16
 
 [node name="pocion4" parent="." unique_id=517165460 instance=ExtResource("23_g6hel")]
-position = Vector2(1094, 264)
+position = Vector2(517.00006, 289)
+scale = Vector2(0.8, 0.8)
 collision_mask = 16
 
 [node name="pocion5" parent="." unique_id=118554487 instance=ExtResource("23_g6hel")]
-position = Vector2(1193, 7)
+position = Vector2(1209, 23)
+scale = Vector2(0.8, 0.8)
 collision_mask = 16
 
 [node name="Menupausa" parent="." unique_id=1821771297 instance=ExtResource("4_mllnt")]
@@ -873,7 +877,7 @@ offset_right = 1128.6669
 offset_bottom = 420.66666
 
 [node name="transicion" type="Sprite2D" parent="Menupausa" unique_id=1710366657]
-position = Vector2(-963.3335, 1370)
+position = Vector2(-1276.6665, 1393.3333)
 scale = Vector2(7.6287656, 7.5474954)
 texture = ExtResource("7_o0bg6")
 

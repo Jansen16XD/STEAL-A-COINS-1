@@ -83,7 +83,7 @@ theme_override_colors/font_outline_color = Color(1, 0.7372549, 0, 1)
 theme_override_fonts/font = ExtResource("2_vy0c0")
 theme_override_font_sizes/font_size = 45
 theme_override_styles/normal = SubResource("StyleBoxFlat_rhsot")
-text = "Reglas:"
+text = "Desafio:"
 
 [node name="Label2" type="Label" parent="." unique_id=1957333392]
 layout_mode = 0
@@ -151,7 +151,7 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_yh6y6")
 text = "Siguiente"
 
 [node name="Fondogris" type="Sprite2D" parent="." unique_id=1763469617]
-position = Vector2(667, 359.5)
+position = Vector2(693, 370)
 scale = Vector2(1.3496094, 0.6962891)
 texture = ExtResource("7_yh6y6")
 

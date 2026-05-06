@@ -1571,7 +1571,7 @@ text = "1
 "
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=1697998975]
-position = Vector2(727.99994, 373.50003)
+position = Vector2(689, 361.00003)
 scale = Vector2(5.9346943, 4.6727276)
 texture = ExtResource("31_q4lpe")
 
