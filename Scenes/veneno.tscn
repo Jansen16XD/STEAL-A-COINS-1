@@ -70,7 +70,7 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_mhs06"]
 radius = 18.027756
 
-[node name="veneno" type="Area2D" unique_id=330998453 groups=["jugador"]]
+[node name="veneno" type="Area2D" unique_id=330998453]
 script = ExtResource("1_6ls7a")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=939607927]

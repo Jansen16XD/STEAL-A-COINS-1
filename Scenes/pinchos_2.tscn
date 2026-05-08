@@ -39,7 +39,7 @@ wait_time = 0.2
 position = Vector2(-13, -4)
 shape = SubResource("RectangleShape2D_gm5gc")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1998566448 groups=["jugador"]]
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1998566448]
 position = Vector2(-13, -12)
 shape = SubResource("RectangleShape2D_gm5gc")
 
