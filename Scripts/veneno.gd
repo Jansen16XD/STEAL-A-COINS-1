@@ -15,8 +15,6 @@ func _ready():
 	add_child(timer)
 	timer.timeout.connect(_on_timer_timeout)
 
-
-
 func _on_body_entered(body):
 	if objetivo != null:
 		return
@@ -29,7 +27,6 @@ func _on_body_entered(body):
 
 		if has_node("CollisionShape2D"):
 			$CollisionShape2D.set_deferred("disabled", true)
-
 
 		timer.start()
 

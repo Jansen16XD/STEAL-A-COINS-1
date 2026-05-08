@@ -8,7 +8,7 @@ var jugador_en_area: Node2D = null
 @onready var area: Area2D = $Area2D
 @onready var timer: Timer = $Timer
 @onready var sprite: AnimatedSprite2D = $AnimatedSprite2D
-@onready var audio_hit: AudioStreamPlayer = $AudioStreamPlayer   # ← AGREGADO
+@onready var audio_hit: AudioStreamPlayer = $AudioStreamPlayer                          
 
 func _ready():
 	velocity.x = -enemyrun
@@ -21,14 +21,14 @@ func _ready():
 func _physics_process(_delta):
 	velocity.y += gravedad
 
-	# Gira al tocar pared, incluso si está atacando
+
 	if is_on_wall():
 		if !sprite.flip_h:
 			velocity.x = enemyrun
 		else:
 			velocity.x = -enemyrun
 
-	# Actualiza dirección visual y el área de daño
+
 	if velocity.x < 0:
 		sprite.flip_h = false
 		area.scale.x = 1
@@ -41,7 +41,7 @@ func _physics_process(_delta):
 func _on_area_enter(body: Node2D) -> void:
 	if body.is_in_group("enemy"):
 		jugador_en_area = body
-		jugador_en_area.recibir_daño(10) # 💥 DAÑO INMEDIATO
+		jugador_en_area.recibir_daño(10) 
 		audio_hit.play()
 		timer.start()
 		

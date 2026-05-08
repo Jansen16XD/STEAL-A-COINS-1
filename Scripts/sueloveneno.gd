@@ -1,7 +1,7 @@
 extends Node2D
 
 var jugador_en_contacto: Node2D = null
-var tiempo_entre_daño := 0.1  # daño cada 0.05 segundos
+var tiempo_entre_daño := 0.1  
 var temporizador_daño := 0.0
 
 func _physics_process(delta):
@@ -16,7 +16,7 @@ func _physics_process(delta):
 func _on_area_2d_body_entered(body: Node2D) -> void:
 	if body.name == "jugador":
 		jugador_en_contacto = body
-		temporizador_daño = 0.0  # daño inmediato al entrar
+		temporizador_daño = 0.0 
 
 func _on_area_2d_body_exited(body: Node2D) -> void:
 	if body == jugador_en_contacto:

@@ -1,6 +1,6 @@
 extends Area2D
 
-@export var id_moneda: String = ""  # ID única asignada desde el editor
+@export var id_moneda: String = ""
 
 func _ready() -> void:
 	# Si ya fue recogida antes, no se muestra
@@ -8,8 +8,8 @@ func _ready() -> void:
 		queue_free()
 
 func _on_body_entered(body: Node2D) -> void:
-	# ACEPTA jugador y jugador1
-	if (body.name == "jugador" or body.name == "jugador1") \
+	# solo acepta jugador
+	if body.name == "jugador" \
 	and not (id_moneda in GameData.monedas_recogidas):
 
 		GameData.monedas += 1
