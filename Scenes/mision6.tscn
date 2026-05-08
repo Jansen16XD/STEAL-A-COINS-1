@@ -206,8 +206,8 @@ _data = {
 script = ExtResource("1_mbqsu")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=112745793]
-position = Vector2(700, 376)
-scale = Vector2(0.9153645, 0.72851557)
+position = Vector2(682, 376)
+scale = Vector2(0.891927, 0.72851557)
 texture = ExtResource("2_5a7tb")
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=306396210]
@@ -348,12 +348,6 @@ scale = Vector2(5, 4.333)
 sprite_frames = SubResource("SpriteFrames_tbgxt")
 autoplay = "default"
 
-[node name="AnimatedSprite2D7" type="AnimatedSprite2D" parent="." unique_id=746462732]
-position = Vector2(1194, 224.00002)
-scale = Vector2(5, 4.333)
-sprite_frames = SubResource("SpriteFrames_tbgxt")
-autoplay = "default"
-
 [node name="LabelTitulo" type="Label" parent="." unique_id=1110435026]
 offset_left = 34.0
 offset_top = 40.0
@@ -447,7 +441,7 @@ tile_map_data = PackedByteArray("AAD//ywAAAAAAAIAAAD9/ysAAAAAAAEAAAD+/ysAAAAAAAE
 tile_set = SubResource("TileSet_jbg3v")
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=466388561]
-position = Vector2(695, 356)
+position = Vector2(659.00006, 365)
 scale = Vector2(3.4746988, 4.154639)
 texture = ExtResource("9_mbqsu")
 

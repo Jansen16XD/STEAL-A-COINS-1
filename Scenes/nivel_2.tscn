@@ -1449,7 +1449,7 @@ collision_mask = 16
 position = Vector2(0, 1.6666565)
 
 [node name="Destinacion" parent="Portal2" index="2"]
-position = Vector2(208, 23)
+position = Vector2(173.33336, 25.833328)
 
 [node name="Portal3" parent="." unique_id=1167502776 instance=ExtResource("16_sselb")]
 modulate = Color(0.92698234, 0.51237005, 0.028364222, 1)

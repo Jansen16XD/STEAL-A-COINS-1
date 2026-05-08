@@ -33,7 +33,7 @@ size = Vector2(43, 27)
 [sub_resource type="CircleShape2D" id="CircleShape2D_aynp6"]
 radius = 20.880613
 
-[node name="enemy2" type="CharacterBody2D" unique_id=2004863140]
+[node name="enemy2" type="CharacterBody2D" unique_id=2004863140 groups=["jugador"]]
 collision_layer = 8
 script = ExtResource("1_aynp6")
 
