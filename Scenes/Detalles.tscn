@@ -358,6 +358,6 @@ autoplay = &"trampas1"
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1948357260]
 stream = ExtResource("7_d2vfm")
-volume_db = -5.474
+volume_db = 5.0
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

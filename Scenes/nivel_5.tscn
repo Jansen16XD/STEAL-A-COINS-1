@@ -1448,7 +1448,7 @@ text = "fbcalfeb
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=874326363]
 stream = ExtResource("10_1rvgi")
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1836810245]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1836810245 groups=["audios"]]
 stream = ExtResource("12_1rvgi")
 volume_db = -10.629
 autoplay = true
@@ -1571,6 +1571,7 @@ text = "1
 "
 
 [node name="transicion" type="Sprite2D" parent="." unique_id=1697998975]
+visible = false
 position = Vector2(689, 361.00003)
 scale = Vector2(5.9346943, 4.6727276)
 texture = ExtResource("31_q4lpe")

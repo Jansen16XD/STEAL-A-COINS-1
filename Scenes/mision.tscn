@@ -8,9 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://cmo6rlgoleck3" path="res://Icono/Copilot_20260102_165125.png" id="5_uf8uv"]
 [ext_resource type="Texture2D" uid="uid://c6026bdnis2og" path="res://Icono/home.png" id="6_84o0k"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="9_84o0k"]
+[ext_resource type="Texture2D" uid="uid://m2xtr0ld62n1" path="res://fecilidadeswey.png" id="10_bffsc"]
 [ext_resource type="Texture2D" uid="uid://cb6hb7o7cv25n" path="res://azulito.png" id="10_dimij"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="10_xjrh6"]
-[ext_resource type="Texture2D" uid="uid://cnc0bqxc4yn8a" path="res://Copilot_20260209_120041.png" id="11_bffsc"]
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="12_hkkif"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nolx5"]
@@ -103,6 +103,28 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 11.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkkif"]
+atlas = ExtResource("10_bffsc")
+region = Rect2(240, 172, 120, 172)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ltje"]
+atlas = ExtResource("10_bffsc")
+region = Rect2(120, 172, 120, 172)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r1xpd"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkkif")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ltje")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
 }]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_8ltje"]
@@ -268,10 +290,10 @@ text = "Mision Completada
 metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="." unique_id=346400549]
-offset_left = 795.0
-offset_top = 437.0
-offset_right = 1003.0
-offset_bottom = 662.0
+offset_left = 815.0
+offset_top = 408.0
+offset_right = 1023.0
+offset_bottom = 633.0
 theme_override_colors/icon_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/icon_hover_color = Color(1, 0.7372549, 0, 1)
 text = "
@@ -286,10 +308,10 @@ anchors_preset = -1
 anchor_left = 0.055309735
 anchor_right = 0.21533923
 anchor_bottom = 0.30084747
-offset_left = 280.0
-offset_top = 443.0
-offset_right = 288.0
-offset_bottom = 451.0
+offset_left = 266.0
+offset_top = 412.0
+offset_right = 274.0
+offset_bottom = 420.0
 theme_override_colors/icon_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/icon_hover_color = Color(1, 0.7372549, 0, 1)
 icon = ExtResource("6_84o0k")
@@ -298,7 +320,7 @@ metadata/_edit_use_anchors_ = true
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=973281938]
 stream = ExtResource("9_84o0k")
-volume_db = -5.474
+volume_db = 6.0
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=2131978396]
 position = Vector2(1276.0001, 153.00002)
@@ -312,10 +334,12 @@ scale = Vector2(5, 4.333)
 sprite_frames = SubResource("SpriteFrames_dimij")
 autoplay = "default"
 
-[node name="Copilot20260209120041" type="Sprite2D" parent="." unique_id=1619173706]
-position = Vector2(701, 591.50006)
-scale = Vector2(0.21289055, 0.23535168)
-texture = ExtResource("11_bffsc")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=111771249]
+position = Vector2(688.75, 602.25006)
+scale = Vector2(1.3541664, 1.3982562)
+sprite_frames = SubResource("SpriteFrames_r1xpd")
+autoplay = "default"
+frame_progress = 0.015615286
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=2090335398]
 position = Vector2(10, 30)

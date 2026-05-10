@@ -259,7 +259,7 @@ text = "Seguir
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=119814299]
 stream = ExtResource("5_whcjo")
-volume_db = -5.474
+volume_db = 5.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=413372570]
 texture_filter = 1

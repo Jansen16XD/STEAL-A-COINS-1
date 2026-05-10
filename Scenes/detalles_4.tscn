@@ -169,7 +169,7 @@ scale = Vector2(3.5000002, 3.5)
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1054284192]
 stream = ExtResource("5_hv2ts")
-volume_db = -5.474
+volume_db = 5.0
 
 [node name="Cura" parent="." unique_id=1598628101 instance=ExtResource("7_6kwtb")]
 position = Vector2(852.00006, 222.00002)

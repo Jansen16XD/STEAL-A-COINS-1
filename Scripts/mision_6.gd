@@ -7,9 +7,7 @@ extends CanvasLayer
 var titulo_completo := ""
 var texto_completo := ""
 var conseguido_completo := ""
-var velocidad_titulo := 0.06
-var velocidad_texto := 0.04
-var velocidad_conseguido := 0.05
+
 
 func _ready():
 	if GameData.monedas == GameData.monedas_totales:
@@ -25,29 +23,6 @@ func _ready():
 		GameData.monedas_totales
 	]
 	
-	titulo.text = ""
-	texto.text = ""
-	conseguido.text = ""
-	
-	await animar_titulo()
-	await animar_texto()
-	if conseguido_completo != "":
-		await animar_conseguido()
-
-func animar_titulo():
-	for i in titulo_completo.length():
-		titulo.text += titulo_completo[i]
-		await get_tree().create_timer(velocidad_titulo).timeout
-
-func animar_texto():
-	for i in texto_completo.length():
-		texto.text += texto_completo[i]
-		await get_tree().create_timer(velocidad_texto).timeout
-
-func animar_conseguido():
-	for i in conseguido_completo.length():
-		conseguido.text += conseguido_completo[i]
-		await get_tree().create_timer(velocidad_conseguido).timeout
 
 func _on_button_pressed() -> void:
 	tecla_audio.play()

@@ -1143,7 +1143,7 @@ tile_set = SubResource("TileSet_yvowg")
 [node name="Camera2D" type="Camera2D" parent="." unique_id=731555890]
 position = Vector2(672, 355)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=992339981]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=992339981 groups=["audios"]]
 stream = ExtResource("13_2v3mx")
 volume_db = -14.274
 autoplay = true

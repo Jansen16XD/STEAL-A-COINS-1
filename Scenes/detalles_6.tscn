@@ -152,7 +152,7 @@ text = "Seguir
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=780621268]
 stream = ExtResource("4_g2ntk")
-volume_db = -5.474
+volume_db = 5.0
 
 [node name="Pflipando" type="Sprite2D" parent="." unique_id=1123811016]
 position = Vector2(1166, 70)

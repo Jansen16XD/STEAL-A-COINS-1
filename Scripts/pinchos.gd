@@ -14,7 +14,7 @@ func _physics_process(delta):
 			temporizador_daño = tiempo_entre_daño
 
 func _on_area_2d_body_entered(body: Node2D) -> void:
-	if body.name == "jugador" or body.name == "jugador1":
+	if body.name == "jugador":
 		jugador_en_contacto = body
 		temporizador_daño = 0.0
 

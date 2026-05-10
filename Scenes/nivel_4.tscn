@@ -707,7 +707,7 @@ stream = ExtResource("11_s4kv5")
 modulate = Color(1, 0.33522514, 0.27217636, 1)
 position = Vector2(544, 651)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=690847355]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=690847355 groups=["audios"]]
 stream = ExtResource("18_448gy")
 volume_db = -0.377
 autoplay = true

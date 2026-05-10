@@ -2,10 +2,6 @@ extends Area2D
 
 @export var id_moneda: String = ""
 
-func _ready() -> void:
-	# Si ya fue recogida antes, no se muestra
-	if id_moneda in GameData.monedas_recogidas:
-		queue_free()
 
 func _on_body_entered(body: Node2D) -> void:
 	# solo acepta jugador

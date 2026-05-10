@@ -666,28 +666,10 @@ position = Vector2(954, 588)
 [node name="MovingPlataform6" parent="." unique_id=691359393 instance=ExtResource("6_qxsm7")]
 position = Vector2(1131, 587)
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1107229064]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=1107229064 groups=["audios"]]
 stream = ExtResource("8_f3x5k")
 volume_db = -3.068
 autoplay = true
-
-[node name="Trampa" parent="." unique_id=1708265784 instance=ExtResource("3_has1v")]
-position = Vector2(228, 402)
-scale = Vector2(1.1, 1.1)
-empieza_a_la_derecha = false
-
-[node name="Trampa2" parent="." unique_id=1908303028 instance=ExtResource("3_has1v")]
-position = Vector2(578, 404)
-scale = Vector2(1.1, 1.1)
-empieza_a_la_derecha = false
-
-[node name="Trampa3" parent="." unique_id=1752476174 instance=ExtResource("3_has1v")]
-position = Vector2(927, 399)
-scale = Vector2(1.1, 1.1)
-
-[node name="Trampa4" parent="." unique_id=621700117 instance=ExtResource("3_has1v")]
-position = Vector2(1232, 395)
-scale = Vector2(1.1, 1.1)
 
 [node name="Portal" parent="." unique_id=1582148107 instance=ExtResource("10_m1vgi")]
 modulate = Color(0.39639124, 0.36901444, 0.9039824, 1)
@@ -714,6 +696,24 @@ position = Vector2(6, -1)
 
 [node name="Destinacion" parent="Portal2" index="2"]
 position = Vector2(-1217, 215)
+
+[node name="Trampa" parent="." unique_id=1708265784 instance=ExtResource("3_has1v")]
+position = Vector2(228, 402)
+scale = Vector2(1.1, 1.1)
+empieza_a_la_derecha = false
+
+[node name="Trampa2" parent="." unique_id=1908303028 instance=ExtResource("3_has1v")]
+position = Vector2(578, 404)
+scale = Vector2(1.1, 1.1)
+empieza_a_la_derecha = false
+
+[node name="Trampa3" parent="." unique_id=1752476174 instance=ExtResource("3_has1v")]
+position = Vector2(927, 399)
+scale = Vector2(1.1, 1.1)
+
+[node name="Trampa4" parent="." unique_id=621700117 instance=ExtResource("3_has1v")]
+position = Vector2(1232, 395)
+scale = Vector2(1.1, 1.1)
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=1438046222]
 position = Vector2(10, 30)

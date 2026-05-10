@@ -9,7 +9,7 @@
 [ext_resource type="Texture2D" uid="uid://c6026bdnis2og" path="res://Icono/home.png" id="6_nxdeq"]
 [ext_resource type="AudioStream" uid="uid://k4gdavo25o5a" path="res://Sounds/click.wav" id="8_kfxyv"]
 [ext_resource type="Texture2D" uid="uid://cb6hb7o7cv25n" path="res://azulito.png" id="10_8v3o0"]
-[ext_resource type="Texture2D" uid="uid://cnc0bqxc4yn8a" path="res://Copilot_20260209_120041.png" id="10_ejnmd"]
+[ext_resource type="Texture2D" uid="uid://m2xtr0ld62n1" path="res://fecilidadeswey.png" id="10_ejnmd"]
 [ext_resource type="Texture2D" uid="uid://dncuitfxjy7ng" path="res://Assets/Coins_16x16/PNG/Coin_One.png" id="10_wmach"]
 [ext_resource type="Texture2D" uid="uid://cqr6j3evgk3cn" path="res://Assets/Tileset Samurai/Input/Sample 32x Tileset.png" id="11_5xdjk"]
 
@@ -103,6 +103,28 @@ animations = [{
 "loop": true,
 "name": &"default",
 "speed": 11.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hkkif"]
+atlas = ExtResource("10_ejnmd")
+region = Rect2(240, 172, 120, 172)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8ltje"]
+atlas = ExtResource("10_ejnmd")
+region = Rect2(120, 172, 120, 172)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_5xdjk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hkkif")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8ltje")
+}],
+"loop": true,
+"name": &"default",
+"speed": 3.0
 }]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_hd67l"]
@@ -259,10 +281,10 @@ text = "Mision Completada
 metadata/_edit_use_anchors_ = true
 
 [node name="Button" type="Button" parent="." unique_id=1483236730]
-offset_left = 781.0
-offset_top = 445.0
-offset_right = 1006.0
-offset_bottom = 660.0
+offset_left = 811.0
+offset_top = 426.0
+offset_right = 1036.0
+offset_bottom = 641.0
 theme_override_colors/icon_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/icon_hover_color = Color(1, 0.7372549, 0, 1)
 icon = ExtResource("4_8v3o0")
@@ -270,9 +292,9 @@ expand_icon = true
 
 [node name="Button3" type="Button" parent="." unique_id=337751238]
 offset_left = 321.0
-offset_top = 433.0
+offset_top = 424.0
 offset_right = 549.0
-offset_bottom = 648.0
+offset_bottom = 639.0
 theme_override_colors/icon_pressed_color = Color(1, 0.7372549, 0, 1)
 theme_override_colors/icon_hover_color = Color(1, 0.7372549, 0, 1)
 icon = ExtResource("6_nxdeq")
@@ -283,7 +305,7 @@ stream = ExtResource("6_5xdjk")
 
 [node name="Audio" type="AudioStreamPlayer" parent="." unique_id=1065360213]
 stream = ExtResource("8_kfxyv")
-volume_db = -5.474
+volume_db = 6.0
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="." unique_id=1021349141]
 position = Vector2(80.00012, 124.664)
@@ -297,10 +319,11 @@ scale = Vector2(5, 4.333)
 sprite_frames = SubResource("SpriteFrames_8v3o0")
 autoplay = "default"
 
-[node name="Copilot20260209120041" type="Sprite2D" parent="." unique_id=532290684]
-position = Vector2(683.00006, 593.50006)
-scale = Vector2(0.21289055, 0.23535168)
-texture = ExtResource("10_ejnmd")
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=871800017]
+position = Vector2(688.75, 604.25006)
+scale = Vector2(1.3541664, 1.3982562)
+sprite_frames = SubResource("SpriteFrames_5xdjk")
+autoplay = "default"
 
 [node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=548875656]
 position = Vector2(-1, 0)

@@ -27,8 +27,10 @@ func _on_button_pressed() -> void:
 	_reiniciar_mundo()
 
 
-func _reiniciar_mundo():
+func _reiniciar_mundo():     
 	get_tree().paused = false
+	# Para todos los AudioStreamPlayer de la escena
+	get_tree().call_group("audios", "stop")
 	get_tree().change_scene_to_file("res://Scenes/mundo.tscn")
 	GameData.health = GameData.max_health
 	GameData.monedas = 0
@@ -44,7 +46,9 @@ func _volver_al_menu():
 
 
 func _on_button_3_pressed() -> void:
-	get_tree().quit()
+	tecla_audio.play()
 	GameData.health = GameData.max_health
 	GameData.monedas = 0
 	GameData.monedas_recogidas.clear()
+	await tecla_audio.finished
+	get_tree().quit()
